@@ -8,10 +8,10 @@ A clean, responsive front-end web application designed to simplify the process o
 
 | Member | Name | Assigned Modules | Branch Name |
 | :--- | :--- | :--- | :--- |
-| **Member 1 (Lead)** | Ram Shankar Singh | Base Architecture, Home, Vehicle Listing | `feature/ram` |
-| **Member 2** | Pratham Vishnani | Vehicle Details, Search & Filter | `feature/pratham` |
-| **Member 3** | Rajat | Booking Form, Availability Tracking | `feature/rajat` |
-| **Member 4** | Priya Sharma | Admin Dashboard, Fleet Management | `feature/priya` |
+| **Member 1 (Lead)** | Ram Shankar Singh | Base Architecture, Home, Vehicle Listing | `feature/home-vehicle-listing` |
+| **Member 2** | Pratham Vishnani | Vehicle Details, Search & Filter | `feature/vehicle-details-search` |
+| **Member 3** | Rajat | Booking Form, Availability Tracking | `feature/booking-availability` |
+| **Member 4** | Priya Sharma | Admin Dashboard, Fleet Management | `feature/admin-fleet` |
 
 ---
 
