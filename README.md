@@ -1,86 +1,92 @@
-# 🚗 Vehicle Rental and Fleet Management System
+# Vehicle Rental and Fleet Management System (SB Group-12 Mini Project)
 
-### SB Group-12 Mini Project
+A clean, responsive **Vehicle Rental and Fleet Management System** developed as a college mini project. The project provides a complete front-end interface for customers to explore rental vehicles, view vehicle details, register/login, submit booking and pre-booking requests, preview payment options, while also providing an admin interface for fleet and booking management.
 
-<p align="center">
-  <img src="images/rental-logo.svg" alt="Vehicle Rental Logo" width="120">
-</p>
-
-<p align="center">
-  A responsive front-end web application for browsing, booking and managing rental vehicles.
-</p>
-
-<p align="center">
-
-
-
-
-\
-
-</p>
-
----
-
-## 🔗 Quick Links
-
-* [📖 About the Project](#-about-the-project)
-* [🎯 Project Overview](#-project-overview)
-* [✨ Features](#-key-features)
-* [👥 Contributors](#-project-contributors--module-distribution)
-* [🛠️ Tech Stack](#️-technology-stack)
-* [👤 User Roles](#-user-roles)
-* [🚗 Vehicle Categories](#-vehicle-categories)
-* [📄 Project Pages](#-complete-page-structure)
-* [📸 Screenshots](#-screenshots)
-* [🌐 Live Demo](#-live-demo)
-* [📁 Project Structure](#-project-structure)
-* [🚀 Installation & Run](#-how-to-run-the-project)
-* [🔮 Future Enhancements](#-future-enhancements)
-* [🎓 Academic Information](#-academic-project)
-
----
-
-## 📖 About the Project
-
-**Vehicle Rental and Fleet Management System** is a college mini project developed by **SB Group-12**.
-
-The system provides a clean and responsive web interface for a vehicle rental service. Customers can browse vehicles, search and filter available vehicles, view detailed information, register/login, submit booking and pre-booking requests, and preview payment options.
-
-The project also contains a separate **Admin Dashboard and Fleet Management interface** for managing vehicle and booking information.
-
-The current implementation focuses on the **front-end design and workflow demonstration** using HTML5 and CSS3.
+The project is designed using **HTML5 and CSS3** with a focus on responsive layouts, user-friendly navigation, vehicle presentation, rental forms, and separate customer and administrator interfaces.
 
 ---
 
 ## 🎯 Project Overview
 
-The system provides interfaces for two major users:
+The Vehicle Rental and Fleet Management System provides a structured web interface for a rental service where users can:
 
-### 👤 Customer
-
-Customers can:
-
-* Browse available vehicles
-* Search and filter vehicles
-* View vehicle details
-* Check rental information
-* Register an account
-* Login through the customer interface
-* Submit booking requests
+* Explore available cars, bikes, and SUVs
+* Search vehicles using different criteria
+* View detailed vehicle information
+* Register and login as a customer
+* Submit rental booking requests
 * Submit pre-booking requests
-* Preview payment options
+* Preview available payment methods
+* Access an administrator login interface
+* View fleet and booking information
+* Manage vehicle records through the fleet management interface
 
-### 🔐 Admin
+> **Note:** This is a front-end academic project. The login, booking, payment and administration modules are currently implemented as static/demo interfaces and do not use a backend database or real payment gateway.
 
-Administrators can:
+---
 
-* Access the admin login interface
-* View dashboard information
-* View fleet records
-* View booking information
-* Add vehicle information
-* Edit vehicle information
-* Remove vehicles through the management interface
+## 👥 Project Contributors & Module Distribution
+
+| Member                       | Assigned Pages / Modules                                                                                           | Branch                           |
+| ---------------------------- | ------------------------------------------------------------------------------------------------------------------ | -------------------------------- |
+| **Ram Shankar Singh (Lead)** | Base Architecture, Home, Vehicle Listing, Login Chooser, Shared CSS, Vehicle Images, Search & Filter, Availability | `feature/home-vehicle-listing`   |
+| **Pratham Vishnani**         | Vehicle Details, Customer Login, Customer Registration                                                             | `feature/vehicle-details-search` |
+| **Rajat**                    | Booking, Pre-booking, Payment Demo                                                                                 | `feature/booking-availability`   |
+| **Priya Sharma**             | Admin Login, Admin Dashboard, Fleet Management                                                                     | `feature/admin-fleet`            |
+
+---
+
+## 🛠️ Technology Stack
+
+* **HTML5** — Semantic page structure and web content
+* **CSS3** — Styling, layouts, Flexbox, responsive design and UI components
+* **Responsive Web Design** — Support for desktop, tablet and mobile screen layouts
+* **Local Images** — Vehicle photographs and rental branding assets
+
+### Current Project Scope
+
+* No JavaScript implementation
+* No backend server
+* No database
+* No external API
+* No real payment gateway
+* No browser storage/localStorage
+
+The current implementation focuses on the **front-end UI and workflow demonstration**.
+
+---
+
+## 🚗 Vehicle Categories
+
+The project includes a vehicle catalogue containing cars, bikes/scooters and SUVs.
+
+### Cars
+
+* Maruti Suzuki Swift
+* Honda City
+* Maruti Suzuki Ertiga
+* Maruti Suzuki Omni
+
+### Bikes & Scooters
+
+* Royal Enfield Classic 350
+* Yamaha R15
+* Honda Activa
+* Royal Enfield Hunter 350
+* Hero Splendor
+* TVS Raider 125
+
+### SUVs
+
+* Hyundai Creta
+* Tata Nexon
+* Toyota Fortuner Legender
+* Mahindra Thar
+* Mahindra Scorpio N
+* Tata Safari Storme
+* Mahindra XUV700
+
+> Vehicle prices, configurations and availability shown in the project are sample academic project data.
 
 ---
 
@@ -89,13 +95,13 @@ Administrators can:
 ### 🏠 Home & Vehicle Listing
 
 * Modern landing page
-* Featured vehicles
+* Featured vehicle section
 * Vehicle categories
 * Vehicle listing interface
-* Vehicle availability information
+* Vehicle availability overview
 * Search and filter interface
 * Responsive vehicle cards
-* Local vehicle images
+* Local vehicle photographs
 
 ### 🔍 Vehicle Search & Details
 
@@ -109,10 +115,10 @@ Administrators can:
 
 ### 👤 Customer Module
 
-* Customer login
-* Customer registration
+* Customer login page
+* Customer registration page
 * Registration form
-* Account information fields
+* Contact and account information fields
 * Password and confirmation fields
 * Reset functionality
 
@@ -123,15 +129,15 @@ Administrators can:
 * Pickup and return dates
 * Pickup and return time
 * Pickup location
-* Customer information
+* Customer contact information
 * Additional requirements
-* Booking form interface
+* Booking form validation through HTML form controls
 * Reset option
 
 ### 📝 Pre-Booking Module
 
 * Preferred vehicle selection
-* Rental duration
+* Rental duration/basis
 * Pickup and return details
 * Customer information
 * Additional requirements
@@ -144,179 +150,71 @@ Administrators can:
 * Rental summary
 * Payment preview/demo workflow
 
-> ⚠️ Payment functionality is currently a **front-end demonstration** and does not process real transactions.
+> Payment functionality is currently a **demo interface** and does not process real transactions.
 
 ### 🔐 Admin Module
 
-* Admin login
-* Admin dashboard
-* Fleet overview
-* Booking overview
+* Admin login interface
+* Fleet overview dashboard
+* Recent booking overview
 * Vehicle records
 * Add vehicle interface
 * Edit vehicle interface
-* Vehicle removal interface
-* Rental rate management
+* Vehicle removal confirmation/demo controls
+* Rental rate fields
+* Fleet management interface
 
 ---
 
-## 👥 Project Contributors & Module Distribution
+## 👤 User Roles
 
-| Member                       | Assigned Pages / Modules                                                                                             | Branch                           |
-| ---------------------------- | -------------------------------------------------------------------------------------------------------------------- | -------------------------------- |
-| **Ram Shankar Singh (Lead)** | Base Architecture, Home, Vehicle Listing, Login Selection, Shared CSS, Vehicle Images, Search & Filter, Availability | `feature/home-vehicle-listing`   |
-| **Pratham Vishnani**         | Vehicle Details, Customer Login, Customer Registration                                                               | `feature/vehicle-details-search` |
-| **Rajat**                    | Booking, Pre-Booking, Payment Demo                                                                                   | `feature/booking-availability`   |
-| **Priya Sharma**             | Admin Login, Admin Dashboard, Fleet Management                                                                       | `feature/admin-fleet`            |
+### Customer
 
----
+Customers can:
 
-## 🛠️ Technology Stack
+* Browse rental vehicles
+* Search and filter vehicles
+* View vehicle details
+* Check rental information
+* Register an account
+* Login through the customer interface
+* Submit booking requests
+* Submit pre-booking requests
+* Preview payment options
 
-| Technology            | Purpose                                  |
-| --------------------- | ---------------------------------------- |
-| **HTML5**             | Semantic page structure                  |
-| **CSS3**              | Styling and page layouts                 |
-| **Flexbox**           | Responsive component layouts             |
-| **Responsive Design** | Desktop, tablet and mobile compatibility |
-| **Local Images**      | Vehicle photographs and branding         |
+### Admin
 
-### Current Scope
+Administrators can:
 
-* ❌ No backend server
-* ❌ No database
-* ❌ No external API
-* ❌ No real payment gateway
-* ❌ No JavaScript implementation
-* ❌ No localStorage/database persistence
-
-The current version is focused on **front-end UI and workflow demonstration**.
-
----
-
-## 🚗 Vehicle Categories
-
-### 🚘 Cars
-
-* Maruti Suzuki Swift
-* Honda City
-* Maruti Suzuki Ertiga
-* Maruti Suzuki Omni
-
-### 🏍️ Bikes & Scooters
-
-* Royal Enfield Classic 350
-* Yamaha R15
-* Honda Activa
-* Royal Enfield Hunter 350
-* Hero Splendor
-* TVS Raider 125
-
-### 🚙 SUVs
-
-* Hyundai Creta
-* Tata Nexon
-* Toyota Fortuner Legender
-* Mahindra Thar
-* Mahindra Scorpio N
-* Tata Safari Storme
-* Mahindra XUV700
-
-> Vehicle prices and availability shown in the project are sample academic data.
+* Access the admin login interface
+* View fleet information
+* View booking information
+* Manage vehicle records
+* Add vehicle information
+* Edit vehicle information
+* Remove vehicles through the demo interface
+* View rental rate information
 
 ---
 
 ## 📄 Complete Page Structure
 
-| Page                                             | Module                   | Owner             |
-| ------------------------------------------------ | ------------------------ | ----------------- |
-| [`index.html`](index.html)                       | Home Page                | Ram Shankar Singh |
-| [`vehicles.html`](vehicles.html)                 | Vehicle Listing & Search | Ram Shankar Singh |
-| [`login.html`](login.html)                       | Login Selection          | Ram Shankar Singh |
-| [`vehicle-details.html`](vehicle-details.html)   | Vehicle Details          | Pratham Vishnani  |
-| [`customer-login.html`](customer-login.html)     | Customer Login           | Pratham Vishnani  |
-| [`register.html`](register.html)                 | Customer Registration    | Pratham Vishnani  |
-| [`booking.html`](booking.html)                   | Vehicle Booking          | Rajat             |
-| [`pre-booking.html`](pre-booking.html)           | Pre-Booking              | Rajat             |
-| [`payment.html`](payment.html)                   | Payment Demo             | Rajat             |
-| [`admin-login.html`](admin-login.html)           | Admin Login              | Priya Sharma      |
-| [`admin-dashboard.html`](admin-dashboard.html)   | Admin Dashboard          | Priya Sharma      |
-| [`fleet-management.html`](fleet-management.html) | Fleet Management         | Priya Sharma      |
+The project consists of **12 main HTML pages** divided among the four team members.
 
----
-
-## 🔗 Project Links
-
-### 📌 Repository
-
-**Project Repository:**
-[**Vehicle Rental and Fleet Management System →**](https://github.com/RamShankar-1228/Vehicle-Rental-and-Fleet-Management-System-)
-
-### 📂 Main Project
-
-[**Open Project Files →**](https://github.com/RamShankar-1228/Vehicle-Rental-and-Fleet-Management-System-/tree/main)
-
-### 🏠 Home Page
-
-[**Open **](index.html)[**`index.html`**](index.html)[** →**](index.html)
-
-### 🚗 Vehicle Listing
-
-[**Open **](vehicles.html)[**`vehicles.html`**](vehicles.html)[** →**](vehicles.html)
-
-### 🔐 Admin Dashboard
-
-[**Open **](admin-dashboard.html)[**`admin-dashboard.html`**](admin-dashboard.html)[** →**](admin-dashboard.html)
-
----
-
-## 📸 Screenshots
-
-> Add project screenshots inside a `screenshots/` folder in the repository and update the filenames below if required.
-
-### 🏠 Home Page
-
-### 🚗 Vehicle Listing
-
-### 🔍 Vehicle Details
-
-### 📅 Booking Page
-
-### 💳 Payment Page
-
-### 🔐 Admin Dashboard
-
-### 🚘 Fleet Management
-
----
-
-## 🌐 Live Demo
-
-### ▶️ Run Locally
-
-The project can be opened directly through the `index.html` file.
-
-```bash
-git clone https://github.com/RamShankar-1228/Vehicle-Rental-and-Fleet-Management-System-.git
-
-cd Vehicle-Rental-and-Fleet-Management-System-
-```
-
-Then open:
-
-```text
-index.html
-```
-
-in a modern web browser.
-
-### 🚀 GitHub Pages
-
-Once GitHub Pages is enabled for the repository, the project can be accessed online through:
-
-**[🌐 Live Demo →](https://ramshankar-1228.github.io/Vehicle-Rental-and-Fleet-Management-System-/)**
-
-> If the GitHub Pages URL changes, update the link above with the generated deployment URL.
+| Page                    | Module                                 | Owner             |
+| ----------------------- | -------------------------------------- | ----------------- |
+| `index.html`            | Home Page                              | Ram Shankar Singh |
+| `vehicles.html`         | Vehicle Listing, Search & Availability | Ram Shankar Singh |
+| `login.html`            | Login Selection                        | Ram Shankar Singh |
+| `vehicle-details.html`  | Vehicle Details                        | Pratham Vishnani  |
+| `customer-login.html`   | Customer Login                         | Pratham Vishnani  |
+| `register.html`         | Customer Registration                  | Pratham Vishnani  |
+| `booking.html`          | Vehicle Booking                        | Rajat             |
+| `pre-booking.html`      | Pre-Booking                            | Rajat             |
+| `payment.html`          | Payment Demo                           | Rajat             |
+| `admin-login.html`      | Admin Login                            | Priya Sharma      |
+| `admin-dashboard.html`  | Admin Dashboard                        | Priya Sharma      |
+| `fleet-management.html` | Fleet Management                       | Priya Sharma      |
 
 ---
 
@@ -361,111 +259,112 @@ Vehicle-Rental-and-Fleet-Management-System/
 │   ├── thar.jpg
 │   └── xuv700.jpg
 │
-├── screenshots/
-│   ├── home.png
-│   ├── vehicles.png
-│   ├── vehicle-details.png
-│   ├── booking.png
-│   ├── payment.png
-│   ├── admin-dashboard.png
-│   └── fleet-management.png
-│
 └── README.md
 ```
+
+---
+
+## 🎨 Design & UI
+
+The project follows a clean and responsive design approach with:
+
+* Consistent navigation
+* Structured content sections
+* Responsive layouts
+* Vehicle cards
+* Form-based interfaces
+* Dashboard-style admin pages
+* Reusable CSS styling
+* Local vehicle imagery
+* Rental service branding
 
 ---
 
 ## 🔄 System Workflow
 
 ```text
-                         ┌──────────────────┐
-                         │    HOME PAGE     │
-                         │   index.html     │
-                         └────────┬─────────┘
-                                  │
-                    ┌─────────────┴─────────────┐
-                    │                           │
-                    ▼                           ▼
-             ┌──────────────┐            ┌───────────────┐
-             │   VEHICLES   │            │ LOGIN CHOOSER │
-             │ vehicles.html│            │   login.html  │
-             └──────┬───────┘            └───────┬───────┘
-                    │                            │
-                    ▼                    ┌───────┴───────┐
-             ┌──────────────┐             │               │
-             │    VEHICLE   │             ▼               ▼
-             │    DETAILS   │        CUSTOMER          ADMIN
-             └──────┬───────┘         LOGIN            LOGIN
-                    │                    │               │
-                    ▼                    ▼               ▼
-             ┌──────────────┐       REGISTER       ADMIN DASHBOARD
-             │   BOOKING /  │                            │
-             │ PRE-BOOKING  │                            ▼
-             └──────┬───────┘                     FLEET MANAGEMENT
-                    │
-                    ▼
-             ┌──────────────┐
-             │ PAYMENT DEMO │
-             └──────────────┘
+                    ┌─────────────────┐
+                    │     Home Page   │
+                    │   index.html    │
+                    └────────┬────────┘
+                             │
+              ┌──────────────┴──────────────┐
+              │                             │
+              ▼                             ▼
+      ┌───────────────┐             ┌────────────────┐
+      │    Vehicles   │             │ Login Selection│
+      │  vehicles.html│             │   login.html   │
+      └───────┬───────┘             └───────┬────────┘
+              │                             │
+              ▼                     ┌───────┴────────┐
+      ┌───────────────┐              │                │
+      │Vehicle Details│              ▼                ▼
+      └───────┬───────┘       Customer Login     Admin Login
+              │                       │                │
+              ▼                       ▼                ▼
+         Booking /             Registration      Admin Dashboard
+        Pre-Booking                                  │
+              │                                      ▼
+              ▼                              Fleet Management
+         Payment Demo
 ```
 
 ---
 
 ## 📱 Responsive Design
 
-The interface is designed for:
+The interface is designed to provide a usable experience across:
 
 * 💻 Desktop
 * 💻 Laptop
 * 📱 Tablet
 * 📱 Mobile devices
 
-The project uses CSS layouts and responsive design techniques to maintain usability across different screen sizes.
+CSS Flexbox, responsive layouts and scalable UI elements are used throughout the project.
 
 ---
 
 ## 🚀 How to Run the Project
 
-### Step 1 — Clone Repository
+Since the project is a static HTML/CSS application, no server installation is required.
+
+### 1. Clone the repository
 
 ```bash
 git clone https://github.com/RamShankar-1228/Vehicle-Rental-and-Fleet-Management-System-.git
 ```
 
-### Step 2 — Navigate to Project
+### 2. Open the project folder
 
 ```bash
 cd Vehicle-Rental-and-Fleet-Management-System-
 ```
 
-### Step 3 — Open in VS Code
+### 3. Run the project
 
-```bash
-code .
+Open:
+
+```text
+index.html
 ```
 
-### Step 4 — Run
+in any modern web browser.
 
-Open `index.html` using:
-
-* VS Code Live Server
-* Any modern web browser
+You can also use **VS Code with Live Server** for easier development and preview.
 
 ---
 
 ## 📌 Project Limitations
 
-This project is developed as a **college mini project / front-end prototype**.
-
-Therefore:
+This version is developed as a **college mini project / front-end prototype**. Therefore:
 
 * Authentication is not connected to a backend
-* User information is not stored in a database
-* Booking information is not persisted
-* Vehicle availability is sample data
-* Payment is a demonstration interface
+* User data is not stored in a database
+* Booking data is not persisted
+* Vehicle availability is demonstration data
+* Payment is only a UI/demo flow
 * Admin operations are front-end demonstrations
-* No real transaction is performed
+* No real payment transaction is performed
 * No server-side validation is implemented
 
 ---
@@ -474,47 +373,32 @@ Therefore:
 
 The project can be extended with:
 
-* Backend integration
-* MySQL / MongoDB database
+* Backend using Node.js / PHP / Java / Python
+* MySQL or MongoDB database
 * Real user authentication
 * Admin authentication and authorization
 * Dynamic vehicle availability
 * Real-time booking management
-* Online payment gateway
+* Online payment gateway integration
 * Customer booking history
 * Admin analytics and reports
 * Vehicle maintenance tracking
 * Email/SMS booking confirmation
-* JavaScript-based dynamic functionality
+* JavaScript-based dynamic interactions
 * REST API integration
 
 ---
 
 ## 🎓 Academic Project
 
-| Detail                | Information                                |
-| --------------------- | ------------------------------------------ |
-| **Project**           | Vehicle Rental and Fleet Management System |
-| **Section**           | SB                                         |
-| **Group**             | 12                                         |
-| **Project Type**      | College Mini Project                       |
-| **Development Focus** | Front-End Web Development                  |
-| **Technologies**      | HTML5, CSS3                                |
+**Project:** Vehicle Rental and Fleet Management System
+**Section:** SB
+**Group:** 12
+**Project Type:** College Mini Project
+**Development Focus:** Front-End Web Development
 
 ---
 
 ## 📜 License
 
-This project has been developed for **educational and academic purposes** as part of a college mini project.
-
----
-
-<p align="center">
-  <b>🚗 Vehicle Rental and Fleet Management System</b>
-  <br>
-  SB Group-12
-  <br><br>
-  <a href="https://github.com/RamShankar-1228/Vehicle-Rental-and-Fleet-Management-System-">
-    🔗 View Repository
-  </a>
-</p>
+This project is developed for **educational and academic purposes** as part of a college mini project.
