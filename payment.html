@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Vehicle Rental and Fleet Management System. An HTML and CSS college mini project.">
+        <title>Payment Demo | Vehicle Rental and Fleet Management System</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" href="images/rental-logo.svg" type="image/svg+xml">
+    </head>
+    <body>
+        <a class="skip-link" href="#main">
+            Skip to content
+        </a>
+        <header class="site-header">
+            <div class="container header-inner">
+                <a class="brand" href="index.html">
+                    <img class="brand-logo" src="images/rental-logo.svg" alt="" width="48" height="48">
+                    <span>
+                        Vehicle Rental
+                        <span class="brand-sub">
+                            &amp;
+                            Fleet Management System
+                        </span>
+                    </span>
+                </a>
+                <nav aria-label="Main navigation">
+<a href="index.html">Home</a>
+<a href="vehicles.html">Vehicles</a>
+<a href="booking.html">Booking</a>
+<a href="pre-booking.html">Pre-booking</a>
+<a href="login.html">Login</a>
+<a href="admin-login.html">Admin Login</a>
+</nav>
+            </div>
+        </header>
+        <main id="main">
+<div class="container section">
+<div class="page-heading">
+<p class="eyebrow">PAYMENT PREVIEW</p>
+<h1>A clear view of your payment.</h1>
+<p>Explore payment options with a fixed example. No real payment is accepted.</p>
+</div>
+<div class="booking-layout">
+<section class="panel">
+<h2>Choose a payment method</h2>
+<p>This is a static demonstration. Do not enter card details, bank credentials or a UPI PIN.</p>
+<form action="payment.html#demo-result" method="get">
+<div class="field">
+<label for="payment-method">Payment Method *</label>
+<select id="payment-method" required>
+<option value="">Select an option</option>
+<option>UPI (demo)</option>
+<option>Debit / Credit Card (demo)</option>
+<option>Pay at pickup (demo)</option>
+</select>
+</div>
+<div class="payment-options">
+<details>
+<summary>UPI preview</summary>
+<p>A real checkout would display a payment request here. There is no QR code, UPI address or payment link in this demo.</p>
+</details>
+<details>
+<summary>Debit / Credit Card preview</summary>
+<p>Example card display only. The fields are disabled and cannot collect card information.</p>
+<div class="form-grid">
+<div class="field">
+<label for="sample-card">Example card</label>
+<input id="sample-card" type="text" disabled value="•••• •••• •••• 1234">
+</div>
+<div class="field">
+<label for="sample-expiry">Example expiry</label>
+<input id="sample-expiry" type="text" disabled value="MM / YY">
+</div>
+</div>
+</details>
+<details>
+<summary>Pay at pickup preview</summary>
+<p>Illustrates a payment-at-collection option. This choice is not stored or communicated to a rental office.</p>
+</details>
+</div>
+<button class="button" type="submit">Preview Payment Step</button>
+</form>
+<p class="notice" id="demo-result">Payment demonstration only. No transaction has occurred and no receipt or booking confirmation has been issued.</p>
+<a class="text-link" href="pre-booking.html">← Back to pre-booking</a>
+</section>
+<aside class="panel rental-guide">
+<p class="eyebrow">FIXED EXAMPLE · NOT YOUR BOOKING</p>
+<h2>Rental summary</h2>
+<img src="images/swift.jpg" alt="Suzuki Swift concept display photograph" width="660" height="400">
+<dl>
+<div>
+<dt>Vehicle</dt>
+<dd>Maruti Suzuki Swift</dd>
+</div>
+<div>
+<dt>Rental basis</dt>
+<dd>1 day (24 hours)</dd>
+</div>
+<div>
+<dt>Daily rental</dt>
+<dd>₹1,800</dd>
+</div>
+<div>
+<dt>Illustrative advance</dt>
+<dd>₹500</dd>
+</div>
+<div>
+<dt>Illustrative remaining balance</dt>
+<dd>₹1,300</dd>
+</div>
+</dl>
+<p class="caption">The advance is part of the ₹1,800 example total. Values do not change with earlier selections. Nothing is payable on this website.</p>
+</aside>
+</div>
+</div>
+</main>
+        <footer>
+            <div class="container footer-grid">
+                <div>
+                    <strong>
+                        Vehicle Rental and Fleet Management System
+                    </strong>
+                    <p>
+                        GLA University, Mathura · B.Tech CSE mini project
+                    </p>
+                </div>
+                <nav aria-label="Footer navigation">
+                    <a href="index.html">
+                        Home
+                    </a>
+                    <a href="vehicles.html">
+                        Vehicles
+                    </a>
+                    <a href="booking.html">
+                        Booking
+                    </a>
+                    <a href="admin-login.html">Admin Login</a>
+                </nav>
+            </div>
+            <div class="container footer-note">
+                Academic demonstration · Sample rates and availability · No real reservations
+            </div>
+        </footer>
+    </body>
+</html>

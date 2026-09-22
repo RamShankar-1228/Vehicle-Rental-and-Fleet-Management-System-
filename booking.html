@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Vehicle Rental and Fleet Management System. An HTML and CSS college mini project.">
+        <title>
+            Booking | Vehicle Rental and Fleet Management System
+        </title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" href="images/rental-logo.svg" type="image/svg+xml">
+    </head>
+    <body>
+        <a class="skip-link" href="#main">
+            Skip to content
+        </a>
+        <header class="site-header">
+            <div class="container header-inner">
+                <a class="brand" href="index.html">
+                    <img class="brand-logo" src="images/rental-logo.svg" alt="" width="48" height="48">
+                    <span>
+                        Vehicle Rental
+                        <span class="brand-sub">
+                            &amp;
+                            Fleet Management System
+                        </span>
+                    </span>
+                </a>
+                <nav aria-label="Main navigation">
+<a href="index.html">Home</a>
+<a href="vehicles.html">Vehicles</a>
+<a href="booking.html" aria-current="page">Booking</a>
+<a href="pre-booking.html">Pre-booking</a>
+<a href="login.html">Login</a>
+<a href="admin-login.html">Admin Login</a>
+</nav>
+            </div>
+        </header>
+        <main id="main">
+            <div class="container section">
+                <div class="page-heading">
+                    <p class="eyebrow">
+                        PLAN YOUR RENTAL
+                    </p>
+                    <h1>
+                        A few details. A better journey.
+                    </h1>
+                    <p>
+                        Fill out a sample booking with your preferred vehicle and rental duration.
+                    </p>
+                </div>
+                <div class="booking-layout">
+                    <section class="panel">
+                        <h2>
+                            Booking details
+                        </h2>
+                        <p>
+                            Fields marked * are required. This demo validates inputs in your browser; it does not send or save a booking.
+                        </p>
+                        <form id="booking-form" action="booking.html#demo-notice" method="get">
+                            <fieldset>
+                                <legend>
+                                    01 · Your information
+                                </legend>
+                                <div class="form-grid">
+                                    <div class="field">
+                                        <label for="full-name">
+                                            Full Name *
+                                        </label>
+                                        <input id="full-name" type="text" required autocomplete="name" minlength="2" maxlength="80">
+                                    </div>
+                                    <div class="field">
+                                        <label for="contact">
+                                            Contact Number *
+                                        </label>
+                                        <input id="contact" type="tel" required autocomplete="tel" pattern="[+0-9 ()-]{10,18}" title="Enter 10–18 characters using digits, spaces, +, parentheses or hyphens.">
+                                    </div>
+                                    <div class="field">
+                                        <label for="email">
+                                            Email *
+                                        </label>
+                                        <input id="email" type="email" required autocomplete="email">
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <legend>
+                                    02 · Your rental
+                                </legend>
+                                <div class="form-grid">
+                                    <div class="field">
+                                        <label for="vehicle">
+                                            Vehicle Selection *
+                                        </label>
+                                        <select id="vehicle" required>
+<option value="">Select a vehicle</option>
+<option value="swift">Maruti Suzuki Swift — ₹150/hour · ₹1,800/day</option>
+<option value="creta">Hyundai Creta — ₹250/hour · ₹3,000/day</option>
+<option value="classic">Royal Enfield Classic 350 — ₹80/hour · ₹900/day</option>
+<option value="city" disabled>Honda City — ₹200/hour · ₹2,400/day (Booked)</option>
+<option value="nexon" disabled>Tata Nexon — ₹220/hour · ₹2,600/day (Under Maintenance)</option>
+<option value="r15" disabled>Yamaha R15 — ₹100/hour · ₹1,100/day (Booked)</option>
+<option value="activa">Honda Activa — ₹50/hour · ₹500/day</option>
+<option value="ertiga">Maruti Suzuki Ertiga — ₹230/hour · ₹2,800/day</option>
+<option value="hunter">Royal Enfield Hunter 350 — ₹80/hour · ₹900/day</option>
+<option value="fortuner">Toyota Fortuner Legender — ₹500/hour · ₹6,000/day</option>
+<option value="thar">Mahindra Thar — ₹400/hour · ₹4,800/day</option>
+<option value="omni">Maruti Suzuki Omni — ₹100/hour · ₹1,200/day</option>
+<option value="scorpio">Mahindra Scorpio N — ₹350/hour · ₹4,200/day</option>
+<option value="splendor">Hero Splendor — ₹40/hour · ₹400/day</option>
+<option value="safari">Tata Safari Storme — ₹300/hour · ₹3,600/day</option>
+<option value="raider">TVS Raider 125 — ₹60/hour · ₹650/day</option>
+<option value="xuv700">Mahindra XUV700 — ₹380/hour · ₹4,500/day</option>
+</select>
+                                    </div>
+                                    <div class="field">
+                                        <label for="rental-basis">
+                                            Rental Basis *
+                                        </label>
+                                        <select id="rental-basis" required>
+                                            <option value="">
+                                                Choose hourly or daily
+                                            </option>
+                                            <option>
+                                                Per hour
+                                            </option>
+                                            <option>
+                                                Per day (24 hours)
+                                            </option>
+                                        </select>
+                                    </div>
+                                    <div class="field">
+                                        <label for="pickup-date">
+                                            Pickup Date *
+                                        </label>
+                                        <input id="pickup-date" type="date" required>
+                                    </div>
+                                    <div class="field">
+                                        <label for="return-date">
+                                            Return Date *
+                                        </label>
+                                        <input id="return-date" type="date" required>
+                                    </div>
+                                    <div class="field">
+                                        <label for="pickup-time">
+                                            Pickup Time *
+                                        </label>
+                                        <input id="pickup-time" type="time" required>
+                                    </div>
+                                    <div class="field">
+                                        <label for="return-time">
+                                            Return Time *
+                                        </label>
+                                        <input id="return-time" type="time" required>
+                                    </div>
+                                    <div class="field">
+                                        <label for="location">
+                                            Pickup Location *
+                                        </label>
+                                        <select id="location" required>
+                                            <option value="">
+                                                Select pickup location
+                                            </option>
+                                            <option>
+                                                Mathura rental office
+                                            </option>
+                                            <option>
+                                                Mathura Junction collection point
+                                            </option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <p class="caption">
+                                    Choose a return date and time after pickup. This static form cannot compare dates or calculate a total.
+                                </p>
+                            </fieldset>
+                            <div class="field">
+                                <label for="requirements">
+                                    Additional Requirements
+                                </label>
+                                <textarea id="requirements" rows="4" maxlength="1000" placeholder="Any preferences for your rental?">
+                                </textarea>
+                            </div>
+                            <div class="actions">
+                                <button class="button" type="submit">
+                                    Submit Booking
+                                </button>
+                                <button class="button secondary" type="reset">
+                                    Reset
+                                </button>
+                            </div>
+                            <p class="notice" id="demo-notice">
+                                Static demonstration only. Submitting returns to this notice after browser validation. No booking is created, sent or stored.
+                            </p>
+                        </form>
+                    </section>
+                    <aside>
+                        <div class="panel rental-guide">
+                            <p class="eyebrow">
+                                RENTAL GUIDE
+                            </p>
+                            <h2>
+                                By the hour.
+                                <br>
+                                Or by the day.
+                            </h2>
+                            <p>
+                                Choose the duration that fits your plan.
+                            </p>
+                            <dl>
+                                <div>
+                                    <dt>
+                                        Hourly rentals
+                                    </dt>
+                                    <dd>
+                                        Sample rates from ₹40 / hour
+                                    </dd>
+                                </div>
+                                <div>
+                                    <dt>
+                                        Daily rentals
+                                    </dt>
+                                    <dd>
+                                        Sample rates from ₹400 / day
+                                    </dd>
+                                </div>
+                            </dl>
+                            <a class="text-link" href="vehicles.html">
+                                Compare all rental rates →
+                            </a>
+                        </div>
+                        <div class="panel">
+                            <h3>
+                                Before you fill the form
+                            </h3>
+                            <ul class="feature-list">
+                                <li>
+                                    Check the vehicle status.
+                                </li>
+                                <li>
+                                    Select the vehicle again in this form.
+                                </li>
+                                <li>
+                                    Choose your rental basis and times.
+                                </li>
+                                <li>
+                                    Use sample personal details for the demo.
+                                </li>
+                            </ul>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        <section class="container section">
+<div class="rental-next panel">
+<div>
+<p class="eyebrow">PLANNING AHEAD?</p>
+<h2>Prefer a future pickup?</h2>
+<p>Explore the pre-booking form and payment preview.</p>
+</div>
+<div class="actions">
+<a class="button" href="pre-booking.html">Pre-book a Vehicle</a>
+<a class="button secondary" href="payment.html">Payment Demo</a>
+</div>
+</div>
+</section>
+</main>
+        <footer>
+            <div class="container footer-grid">
+                <div>
+                    <strong>
+                        Vehicle Rental and Fleet Management System
+                    </strong>
+                    <p>
+                        GLA University, Mathura · B.Tech CSE mini project
+                    </p>
+                </div>
+                <nav aria-label="Footer navigation">
+                    <a href="index.html">
+                        Home
+                    </a>
+                    <a href="vehicles.html">
+                        Vehicles
+                    </a>
+                    <a href="booking.html">
+                        Booking
+                    </a>
+                    <a href="admin-login.html">Admin Login</a>
+                </nav>
+            </div>
+            <div class="container footer-note">
+                Academic demonstration · Sample rates and availability · No real reservations
+            </div>
+        </footer>
+    </body>
+</html>
