@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Vehicle Rental and Fleet Management System. An HTML and CSS college mini project.">
+        <title>Admin Login | Vehicle Rental and Fleet Management System</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" href="images/rental-logo.svg" type="image/svg+xml">
+    </head>
+    <body>
+        <a class="skip-link" href="#main">
+            Skip to content
+        </a>
+        <header class="site-header">
+            <div class="container header-inner">
+                <a class="brand" href="index.html">
+                    <img class="brand-logo" src="images/rental-logo.svg" alt="" width="48" height="48">
+                    <span>
+                        Vehicle Rental
+                        <span class="brand-sub">
+                            &amp;
+                            Fleet Management System
+                        </span>
+                    </span>
+                </a>
+                <nav aria-label="Main navigation">
+<a href="index.html">Home</a>
+<a href="vehicles.html">Vehicles</a>
+<a href="booking.html">Booking</a>
+<a href="pre-booking.html">Pre-booking</a>
+<a href="login.html">Login</a>
+<a href="admin-login.html" aria-current="page">Admin Login</a>
+</nav>
+            </div>
+        </header>
+        <main id="main">
+<div class="container section">
+<div class="auth-layout">
+<section class="auth-intro">
+<p class="eyebrow">ADMIN ACCESS · STATIC DEMO</p>
+<h1>Your fleet, in one place.</h1>
+<p>Preview fleet records, bookings and availability.</p>
+<img src="images/swift.jpg" alt="Suzuki Swift concept display photograph" width="660" height="400">
+</section>
+<section class="panel">
+<h2>Admin login</h2>
+<p>Use sample details only. This form does not verify credentials or create a session.</p>
+<form action="admin-dashboard.html" method="get" autocomplete="off">
+<div class="auth-fields">
+<div class="field">
+<label for="admin-id">Admin ID *</label>
+<input id="admin-id" type="text" required minlength="3" autocomplete="off">
+</div>
+<div class="field">
+<label for="login-password">Password *</label>
+<input id="login-password" type="password" required minlength="8" autocomplete="off">
+</div>
+</div>
+<button class="button" type="submit">Continue to Admin Demo</button>
+</form>
+<p class="notice" id="demo-result">Enter a sample admin ID and a password of at least 8 characters to continue through this demo form. Values are not verified. Anyone with the dashboard URL can still open it directly.</p>
+
+<p class="auth-links">Customer? <a href="customer-login.html">Go to customer login</a>
+</p>
+<p class="caption">This admin view is public and has no access protection. Admin account creation is outside this static demo.</p>
+</section>
+</div>
+</div>
+</main>
+        <footer>
+            <div class="container footer-grid">
+                <div>
+                    <strong>
+                        Vehicle Rental and Fleet Management System
+                    </strong>
+                    <p>
+                        GLA University, Mathura · B.Tech CSE mini project
+                    </p>
+                </div>
+                <nav aria-label="Footer navigation">
+                    <a href="index.html">
+                        Home
+                    </a>
+                    <a href="vehicles.html">
+                        Vehicles
+                    </a>
+                    <a href="booking.html">
+                        Booking
+                    </a>
+                    <a href="admin-login.html">Admin Login</a>
+                </nav>
+            </div>
+            <div class="container footer-note">
+                Academic demonstration · Sample rates and availability · No real reservations
+            </div>
+        </footer>
+    </body>
+</html>
