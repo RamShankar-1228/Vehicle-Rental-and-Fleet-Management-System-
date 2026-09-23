@@ -1,0 +1,2147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Vehicle Rental and Fleet Management System. An HTML and CSS college mini project.">
+        <title>
+            Fleet Management | Vehicle Rental and Fleet Management System
+        </title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" href="images/rental-logo.svg" type="image/svg+xml">
+    </head>
+    <body>
+        <a class="skip-link" href="#main">
+            Skip to content
+        </a>
+        <header class="site-header">
+            <div class="container header-inner">
+                <a class="brand" href="index.html">
+                    <img class="brand-logo" src="images/rental-logo.svg" alt="" width="48" height="48">
+                    <span>
+                        Vehicle Rental
+                        <span class="brand-sub">
+                            &amp;
+                            Fleet Management System
+                        </span>
+                    </span>
+                </a>
+                <nav aria-label="Main navigation">
+<a href="index.html">Home</a>
+<a href="vehicles.html">Vehicles</a>
+<a href="booking.html">Booking</a>
+<a href="pre-booking.html">Pre-booking</a>
+<a href="login.html">Login</a>
+<a href="admin-login.html">Admin Login</a>
+</nav>
+            </div>
+        </header>
+        <main id="main">
+<div class="container">
+<p class="notice">Static admin demonstration. Direct URLs are public; HTML/CSS cannot authenticate users. <a href="admin-login.html">Admin Login</a>
+</p>
+</div>
+            <div class="container section">
+                <nav class="admin-nav" aria-label="Admin navigation">
+                    <a href="admin-dashboard.html">
+                        Dashboard
+                    </a>
+                    <a href="fleet-management.html" aria-current="page">
+                        Fleet Management
+                    </a>
+                    <a href="admin-dashboard.html#bookings">
+                        Bookings
+                    </a>
+                    <a href="admin-dashboard.html#availability">
+                        Availability
+                    </a>
+                </nav>
+                <div class="page-heading">
+                    <p class="eyebrow">
+                        ADMIN WORKSPACE
+                    </p>
+                    <h1>
+                        Fleet management
+                    </h1>
+                    <p>
+                        Review vehicle records and explore the static add, edit and remove interfaces.
+                    </p>
+                </div>
+                <p class="notice">
+                    Demo only. Forms and actions do not add, change, upload or delete records.
+                </p>
+                <section>
+                    <div class="section-heading">
+                        <h2>
+                            Vehicle records
+                        </h2>
+                        <a class="button" href="#add-vehicle">
+                            + Add Vehicle
+                        </a>
+                    </div>
+                    <div class="table-wrap" role="region" aria-label="Vehicle availability table" tabindex="0">
+                        <table>
+                            <caption>
+                                Sample fleet records · 17 vehicles
+                            </caption>
+                            <thead>
+                                <tr>
+                                    <th scope="col">
+                                        Vehicle
+                                    </th>
+                                    <th scope="col">
+                                        Category
+                                    </th>
+                                    <th scope="col">
+                                        Rental Rate
+                                    </th>
+                                    <th scope="col">
+                                        Status
+                                    </th>
+                                    <th scope="col">
+                                        Actions
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">
+                                        <a href="vehicle-details.html#swift">
+                                            Maruti Suzuki Swift
+                                        </a>
+                                    </th>
+                                    <td>
+                                        Cars
+                                    </td>
+                                    <td>
+                                        ₹150 / hour
+                                        <br>
+                                        ₹1,800 / day
+                                    </td>
+                                    <td>
+                                        <span class="badge available">
+                                            Available
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <a href="#edit-swift" class="text-link">
+                                            Edit
+                                        </a>
+                                        <details class="remove-action">
+                                            <summary>
+                                                Remove
+                                            </summary>
+                                            <p>
+                                                Demo only. Maruti Suzuki Swift will remain in the fleet.
+                                            </p>
+                                            <button type="button" disabled>
+                                                Confirm removal (demo)
+                                            </button>
+                                        </details>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <a href="vehicle-details.html#creta">
+                                            Hyundai Creta
+                                        </a>
+                                    </th>
+                                    <td>
+                                        SUVs
+                                    </td>
+                                    <td>
+                                        ₹250 / hour
+                                        <br>
+                                        ₹3,000 / day
+                                    </td>
+                                    <td>
+                                        <span class="badge available">
+                                            Available
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <a href="#edit-creta" class="text-link">
+                                            Edit
+                                        </a>
+                                        <details class="remove-action">
+                                            <summary>
+                                                Remove
+                                            </summary>
+                                            <p>
+                                                Demo only. Hyundai Creta will remain in the fleet.
+                                            </p>
+                                            <button type="button" disabled>
+                                                Confirm removal (demo)
+                                            </button>
+                                        </details>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <a href="vehicle-details.html#classic">
+                                            Royal Enfield Classic 350
+                                        </a>
+                                    </th>
+                                    <td>
+                                        Bikes
+                                    </td>
+                                    <td>
+                                        ₹80 / hour
+                                        <br>
+                                        ₹900 / day
+                                    </td>
+                                    <td>
+                                        <span class="badge available">
+                                            Available
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <a href="#edit-classic" class="text-link">
+                                            Edit
+                                        </a>
+                                        <details class="remove-action">
+                                            <summary>
+                                                Remove
+                                            </summary>
+                                            <p>
+                                                Demo only. Royal Enfield Classic 350 will remain in the fleet.
+                                            </p>
+                                            <button type="button" disabled>
+                                                Confirm removal (demo)
+                                            </button>
+                                        </details>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <a href="vehicle-details.html#city">
+                                            Honda City
+                                        </a>
+                                    </th>
+                                    <td>
+                                        Cars
+                                    </td>
+                                    <td>
+                                        ₹200 / hour
+                                        <br>
+                                        ₹2,400 / day
+                                    </td>
+                                    <td>
+                                        <span class="badge booked">
+                                            Booked
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <a href="#edit-city" class="text-link">
+                                            Edit
+                                        </a>
+                                        <details class="remove-action">
+                                            <summary>
+                                                Remove
+                                            </summary>
+                                            <p>
+                                                Demo only. Honda City will remain in the fleet.
+                                            </p>
+                                            <button type="button" disabled>
+                                                Confirm removal (demo)
+                                            </button>
+                                        </details>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <a href="vehicle-details.html#nexon">
+                                            Tata Nexon
+                                        </a>
+                                    </th>
+                                    <td>
+                                        SUVs
+                                    </td>
+                                    <td>
+                                        ₹220 / hour
+                                        <br>
+                                        ₹2,600 / day
+                                    </td>
+                                    <td>
+                                        <span class="badge maintenance">
+                                            Under Maintenance
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <a href="#edit-nexon" class="text-link">
+                                            Edit
+                                        </a>
+                                        <details class="remove-action">
+                                            <summary>
+                                                Remove
+                                            </summary>
+                                            <p>
+                                                Demo only. Tata Nexon will remain in the fleet.
+                                            </p>
+                                            <button type="button" disabled>
+                                                Confirm removal (demo)
+                                            </button>
+                                        </details>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <a href="vehicle-details.html#r15">
+                                            Yamaha R15
+                                        </a>
+                                    </th>
+                                    <td>
+                                        Bikes
+                                    </td>
+                                    <td>
+                                        ₹100 / hour
+                                        <br>
+                                        ₹1,100 / day
+                                    </td>
+                                    <td>
+                                        <span class="badge booked">
+                                            Booked
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <a href="#edit-r15" class="text-link">
+                                            Edit
+                                        </a>
+                                        <details class="remove-action">
+                                            <summary>
+                                                Remove
+                                            </summary>
+                                            <p>
+                                                Demo only. Yamaha R15 will remain in the fleet.
+                                            </p>
+                                            <button type="button" disabled>
+                                                Confirm removal (demo)
+                                            </button>
+                                        </details>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <a href="vehicle-details.html#activa">
+                                            Honda Activa
+                                        </a>
+                                    </th>
+                                    <td>
+                                        Bikes
+                                    </td>
+                                    <td>
+                                        ₹50 / hour
+                                        <br>
+                                        ₹500 / day
+                                    </td>
+                                    <td>
+                                        <span class="badge available">
+                                            Available
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <a href="#edit-activa" class="text-link">
+                                            Edit
+                                        </a>
+                                        <details class="remove-action">
+                                            <summary>
+                                                Remove
+                                            </summary>
+                                            <p>
+                                                Demo only. Honda Activa will remain in the fleet.
+                                            </p>
+                                            <button type="button" disabled>
+                                                Confirm removal (demo)
+                                            </button>
+                                        </details>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <a href="vehicle-details.html#ertiga">
+                                            Maruti Suzuki Ertiga
+                                        </a>
+                                    </th>
+                                    <td>
+                                        Cars
+                                    </td>
+                                    <td>
+                                        ₹230 / hour
+                                        <br>
+                                        ₹2,800 / day
+                                    </td>
+                                    <td>
+                                        <span class="badge available">
+                                            Available
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <a href="#edit-ertiga" class="text-link">
+                                            Edit
+                                        </a>
+                                        <details class="remove-action">
+                                            <summary>
+                                                Remove
+                                            </summary>
+                                            <p>
+                                                Demo only. Maruti Suzuki Ertiga will remain in the fleet.
+                                            </p>
+                                            <button type="button" disabled>
+                                                Confirm removal (demo)
+                                            </button>
+                                        </details>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <a href="vehicle-details.html#hunter">
+                                            Royal Enfield Hunter 350
+                                        </a>
+                                    </th>
+                                    <td>
+                                        Bikes
+                                    </td>
+                                    <td>
+                                        ₹80 / hour
+                                        <br>
+                                        ₹900 / day
+                                    </td>
+                                    <td>
+                                        <span class="badge available">
+                                            Available
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <a href="#edit-hunter" class="text-link">
+                                            Edit
+                                        </a>
+                                        <details class="remove-action">
+                                            <summary>
+                                                Remove
+                                            </summary>
+                                            <p>
+                                                Demo only. Royal Enfield Hunter 350 will remain in the fleet.
+                                            </p>
+                                            <button type="button" disabled>
+                                                Confirm removal (demo)
+                                            </button>
+                                        </details>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <a href="vehicle-details.html#fortuner">
+                                            Toyota Fortuner Legender
+                                        </a>
+                                    </th>
+                                    <td>
+                                        SUVs
+                                    </td>
+                                    <td>
+                                        ₹500 / hour
+                                        <br>
+                                        ₹6,000 / day
+                                    </td>
+                                    <td>
+                                        <span class="badge available">
+                                            Available
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <a href="#edit-fortuner" class="text-link">
+                                            Edit
+                                        </a>
+                                        <details class="remove-action">
+                                            <summary>
+                                                Remove
+                                            </summary>
+                                            <p>
+                                                Demo only. Toyota Fortuner Legender will remain in the fleet.
+                                            </p>
+                                            <button type="button" disabled>
+                                                Confirm removal (demo)
+                                            </button>
+                                        </details>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <a href="vehicle-details.html#thar">
+                                            Mahindra Thar
+                                        </a>
+                                    </th>
+                                    <td>
+                                        SUVs
+                                    </td>
+                                    <td>
+                                        ₹400 / hour
+                                        <br>
+                                        ₹4,800 / day
+                                    </td>
+                                    <td>
+                                        <span class="badge available">
+                                            Available
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <a href="#edit-thar" class="text-link">
+                                            Edit
+                                        </a>
+                                        <details class="remove-action">
+                                            <summary>
+                                                Remove
+                                            </summary>
+                                            <p>
+                                                Demo only. Mahindra Thar will remain in the fleet.
+                                            </p>
+                                            <button type="button" disabled>
+                                                Confirm removal (demo)
+                                            </button>
+                                        </details>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <a href="vehicle-details.html#omni">
+                                            Maruti Suzuki Omni
+                                        </a>
+                                    </th>
+                                    <td>
+                                        Cars
+                                    </td>
+                                    <td>
+                                        ₹100 / hour
+                                        <br>
+                                        ₹1,200 / day
+                                    </td>
+                                    <td>
+                                        <span class="badge available">
+                                            Available
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <a href="#edit-omni" class="text-link">
+                                            Edit
+                                        </a>
+                                        <details class="remove-action">
+                                            <summary>
+                                                Remove
+                                            </summary>
+                                            <p>
+                                                Demo only. Maruti Suzuki Omni will remain in the fleet.
+                                            </p>
+                                            <button type="button" disabled>
+                                                Confirm removal (demo)
+                                            </button>
+                                        </details>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <a href="vehicle-details.html#scorpio">
+                                            Mahindra Scorpio N
+                                        </a>
+                                    </th>
+                                    <td>
+                                        SUVs
+                                    </td>
+                                    <td>
+                                        ₹350 / hour
+                                        <br>
+                                        ₹4,200 / day
+                                    </td>
+                                    <td>
+                                        <span class="badge available">
+                                            Available
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <a href="#edit-scorpio" class="text-link">
+                                            Edit
+                                        </a>
+                                        <details class="remove-action">
+                                            <summary>
+                                                Remove
+                                            </summary>
+                                            <p>
+                                                Demo only. Mahindra Scorpio N will remain in the fleet.
+                                            </p>
+                                            <button type="button" disabled>
+                                                Confirm removal (demo)
+                                            </button>
+                                        </details>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <a href="vehicle-details.html#splendor">
+                                            Hero Splendor
+                                        </a>
+                                    </th>
+                                    <td>
+                                        Bikes
+                                    </td>
+                                    <td>
+                                        ₹40 / hour
+                                        <br>
+                                        ₹400 / day
+                                    </td>
+                                    <td>
+                                        <span class="badge available">
+                                            Available
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <a href="#edit-splendor" class="text-link">
+                                            Edit
+                                        </a>
+                                        <details class="remove-action">
+                                            <summary>
+                                                Remove
+                                            </summary>
+                                            <p>
+                                                Demo only. Hero Splendor will remain in the fleet.
+                                            </p>
+                                            <button type="button" disabled>
+                                                Confirm removal (demo)
+                                            </button>
+                                        </details>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <a href="vehicle-details.html#safari">
+                                            Tata Safari Storme
+                                        </a>
+                                    </th>
+                                    <td>
+                                        SUVs
+                                    </td>
+                                    <td>
+                                        ₹300 / hour
+                                        <br>
+                                        ₹3,600 / day
+                                    </td>
+                                    <td>
+                                        <span class="badge available">
+                                            Available
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <a href="#edit-safari" class="text-link">
+                                            Edit
+                                        </a>
+                                        <details class="remove-action">
+                                            <summary>
+                                                Remove
+                                            </summary>
+                                            <p>
+                                                Demo only. Tata Safari Storme will remain in the fleet.
+                                            </p>
+                                            <button type="button" disabled>
+                                                Confirm removal (demo)
+                                            </button>
+                                        </details>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <a href="vehicle-details.html#raider">
+                                            TVS Raider 125
+                                        </a>
+                                    </th>
+                                    <td>
+                                        Bikes
+                                    </td>
+                                    <td>
+                                        ₹60 / hour
+                                        <br>
+                                        ₹650 / day
+                                    </td>
+                                    <td>
+                                        <span class="badge available">
+                                            Available
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <a href="#edit-raider" class="text-link">
+                                            Edit
+                                        </a>
+                                        <details class="remove-action">
+                                            <summary>
+                                                Remove
+                                            </summary>
+                                            <p>
+                                                Demo only. TVS Raider 125 will remain in the fleet.
+                                            </p>
+                                            <button type="button" disabled>
+                                                Confirm removal (demo)
+                                            </button>
+                                        </details>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <a href="vehicle-details.html#xuv700">
+                                            Mahindra XUV700
+                                        </a>
+                                    </th>
+                                    <td>
+                                        SUVs
+                                    </td>
+                                    <td>
+                                        ₹380 / hour
+                                        <br>
+                                        ₹4,500 / day
+                                    </td>
+                                    <td>
+                                        <span class="badge available">
+                                            Available
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <a href="#edit-xuv700" class="text-link">
+                                            Edit
+                                        </a>
+                                        <details class="remove-action">
+                                            <summary>
+                                                Remove
+                                            </summary>
+                                            <p>
+                                                Demo only. Mahindra XUV700 will remain in the fleet.
+                                            </p>
+                                            <button type="button" disabled>
+                                                Confirm removal (demo)
+                                            </button>
+                                        </details>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+                <section id="add-vehicle" class="panel section">
+                    <h2>
+                        Add Vehicle
+                    </h2>
+                    <p>
+                        Preview the fields used for a new fleet record.
+                    </p>
+                    <form action="fleet-management.html#fleet-notice" method="get">
+                        <div class="form-grid">
+                            <div class="field">
+                                <label for="add-name">
+                                    Vehicle Name *
+                                </label>
+                                <input id="add-name" type="text" required>
+                            </div>
+                            <div class="field">
+                                <label for="add-category">
+                                    Category *
+                                </label>
+                                <select id="add-category" required>
+                                    <option value="">
+                                        Choose category
+                                    </option>
+                                    <option>
+                                        Cars
+                                    </option>
+                                    <option>
+                                        Bikes
+                                    </option>
+                                    <option>
+                                        SUVs
+                                    </option>
+                                </select>
+                            </div>
+                            <div class="field">
+                                <label for="add-hour">
+                                    Rental Rate / hour (₹) *
+                                </label>
+                                <input id="add-hour" type="number" min="1" step="1" required>
+                            </div>
+                            <div class="field">
+                                <label for="add-day">
+                                    Rental Rate / day (₹) *
+                                </label>
+                                <input id="add-day" type="number" min="1" step="1" required>
+                            </div>
+                            <div class="field">
+                                <label for="add-status">
+                                    Status *
+                                </label>
+                                <select id="add-status" required>
+                                    <option>
+                                        Available
+                                    </option>
+                                    <option>
+                                        Booked
+                                    </option>
+                                    <option>
+                                        Under Maintenance
+                                    </option>
+                                </select>
+                            </div>
+                            <div class="field">
+                                <label for="add-image">
+                                    Image (local selection only)
+                                </label>
+                                <input id="add-image" type="file" accept="image/*">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label for="add-specs">
+                                Specifications *
+                            </label>
+                            <textarea id="add-specs" required rows="3" placeholder="Transmission, fuel type, seating and features">
+                            </textarea>
+                        </div>
+                        <div class="actions">
+                            <button type="submit" class="button">
+                                Add Vehicle (demo)
+                            </button>
+                            <button class="button secondary" type="reset">
+                                Reset
+                            </button>
+                        </div>
+                        <p class="caption">
+                            Selecting an image does not upload it or generate a preview.
+                        </p>
+                    </form>
+                </section>
+                <section class="section">
+                    <h2>
+                        Edit vehicle interfaces
+                    </h2>
+                    <p>
+                        Choose Edit in the table to jump to the matching sample form. Open a form to review its fields.
+                    </p>
+                    <details class="edit-panel" id="edit-swift">
+                        <summary>
+                            Edit Maruti Suzuki Swift
+                        </summary>
+                        <form action="fleet-management.html#fleet-notice" method="get">
+                            <div class="form-grid">
+                                <div class="field">
+                                    <label for="edit-name-swift">
+                                        Vehicle Name *
+                                    </label>
+                                    <input id="edit-name-swift" type="text" required value="Maruti Suzuki Swift">
+                                </div>
+                                <div class="field">
+                                    <label for="edit-cat-swift">
+                                        Category *
+                                    </label>
+                                    <select id="edit-cat-swift" required>
+                                        <option selected>
+                                            Cars
+                                        </option>
+                                        <option>
+                                            Bikes
+                                        </option>
+                                        <option>
+                                            SUVs
+                                        </option>
+                                    </select>
+                                </div>
+                                <div class="field">
+                                    <label for="edit-hour-swift">
+                                        Rental Rate / hour (₹) *
+                                    </label>
+                                    <input id="edit-hour-swift" type="number" required min="1" value="150">
+                                </div>
+                                <div class="field">
+                                    <label for="edit-day-swift">
+                                        Rental Rate / day (₹) *
+                                    </label>
+                                    <input id="edit-day-swift" type="number" required min="1" value="1800">
+                                </div>
+                                <div class="field">
+                                    <label for="edit-status-swift">
+                                        Status *
+                                    </label>
+                                    <select id="edit-status-swift" required>
+                                        <option selected>
+                                            Available
+                                        </option>
+                                        <option>
+                                            Booked
+                                        </option>
+                                        <option>
+                                            Under Maintenance
+                                        </option>
+                                    </select>
+                                </div>
+                                <div class="field">
+                                    <label for="edit-image-swift">
+                                        Replacement image (local only)
+                                    </label>
+                                    <input id="edit-image-swift" type="file" accept="image/*">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label for="spec-swift">
+                                    Specifications *
+                                </label>
+                                <textarea id="spec-swift" rows="2" required>
+                                    Manual, Petrol, 5 seats
+                                </textarea>
+                            </div>
+                            <button class="button" type="submit">
+                                Save Changes (demo)
+                            </button>
+                        </form>
+                    </details>
+                    <details class="edit-panel" id="edit-creta">
+                        <summary>
+                            Edit Hyundai Creta
+                        </summary>
+                        <form action="fleet-management.html#fleet-notice" method="get">
+                            <div class="form-grid">
+                                <div class="field">
+                                    <label for="edit-name-creta">
+                                        Vehicle Name *
+                                    </label>
+                                    <input id="edit-name-creta" type="text" required value="Hyundai Creta">
+                                </div>
+                                <div class="field">
+                                    <label for="edit-cat-creta">
+                                        Category *
+                                    </label>
+                                    <select id="edit-cat-creta" required>
+                                        <option>
+                                            Cars
+                                        </option>
+                                        <option>
+                                            Bikes
+                                        </option>
+                                        <option selected>
+                                            SUVs
+                                        </option>
+                                    </select>
+                                </div>
+                                <div class="field">
+                                    <label for="edit-hour-creta">
+                                        Rental Rate / hour (₹) *
+                                    </label>
+                                    <input id="edit-hour-creta" type="number" required min="1" value="250">
+                                </div>
+                                <div class="field">
+                                    <label for="edit-day-creta">
+                                        Rental Rate / day (₹) *
+                                    </label>
+                                    <input id="edit-day-creta" type="number" required min="1" value="3000">
+                                </div>
+                                <div class="field">
+                                    <label for="edit-status-creta">
+                                        Status *
+                                    </label>
+                                    <select id="edit-status-creta" required>
+                                        <option selected>
+                                            Available
+                                        </option>
+                                        <option>
+                                            Booked
+                                        </option>
+                                        <option>
+                                            Under Maintenance
+                                        </option>
+                                    </select>
+                                </div>
+                                <div class="field">
+                                    <label for="edit-image-creta">
+                                        Replacement image (local only)
+                                    </label>
+                                    <input id="edit-image-creta" type="file" accept="image/*">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label for="spec-creta">
+                                    Specifications *
+                                </label>
+                                <textarea id="spec-creta" rows="2" required>
+                                    Automatic, Petrol, 5 seats
+                                </textarea>
+                            </div>
+                            <button class="button" type="submit">
+                                Save Changes (demo)
+                            </button>
+                        </form>
+                    </details>
+                    <details class="edit-panel" id="edit-classic">
+                        <summary>
+                            Edit Royal Enfield Classic 350
+                        </summary>
+                        <form action="fleet-management.html#fleet-notice" method="get">
+                            <div class="form-grid">
+                                <div class="field">
+                                    <label for="edit-name-classic">
+                                        Vehicle Name *
+                                    </label>
+                                    <input id="edit-name-classic" type="text" required value="Royal Enfield Classic 350">
+                                </div>
+                                <div class="field">
+                                    <label for="edit-cat-classic">
+                                        Category *
+                                    </label>
+                                    <select id="edit-cat-classic" required>
+                                        <option>
+                                            Cars
+                                        </option>
+                                        <option selected>
+                                            Bikes
+                                        </option>
+                                        <option>
+                                            SUVs
+                                        </option>
+                                    </select>
+                                </div>
+                                <div class="field">
+                                    <label for="edit-hour-classic">
+                                        Rental Rate / hour (₹) *
+                                    </label>
+                                    <input id="edit-hour-classic" type="number" required min="1" value="80">
+                                </div>
+                                <div class="field">
+                                    <label for="edit-day-classic">
+                                        Rental Rate / day (₹) *
+                                    </label>
+                                    <input id="edit-day-classic" type="number" required min="1" value="900">
+                                </div>
+                                <div class="field">
+                                    <label for="edit-status-classic">
+                                        Status *
+                                    </label>
+                                    <select id="edit-status-classic" required>
+                                        <option selected>
+                                            Available
+                                        </option>
+                                        <option>
+                                            Booked
+                                        </option>
+                                        <option>
+                                            Under Maintenance
+                                        </option>
+                                    </select>
+                                </div>
+                                <div class="field">
+                                    <label for="edit-image-classic">
+                                        Replacement image (local only)
+                                    </label>
+                                    <input id="edit-image-classic" type="file" accept="image/*">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label for="spec-classic">
+                                    Specifications *
+                                </label>
+                                <textarea id="spec-classic" rows="2" required>
+                                    Manual, Petrol, 2 seats
+                                </textarea>
+                            </div>
+                            <button class="button" type="submit">
+                                Save Changes (demo)
+                            </button>
+                        </form>
+                    </details>
+                    <details class="edit-panel" id="edit-city">
+                        <summary>
+                            Edit Honda City
+                        </summary>
+                        <form action="fleet-management.html#fleet-notice" method="get">
+                            <div class="form-grid">
+                                <div class="field">
+                                    <label for="edit-name-city">
+                                        Vehicle Name *
+                                    </label>
+                                    <input id="edit-name-city" type="text" required value="Honda City">
+                                </div>
+                                <div class="field">
+                                    <label for="edit-cat-city">
+                                        Category *
+                                    </label>
+                                    <select id="edit-cat-city" required>
+                                        <option selected>
+                                            Cars
+                                        </option>
+                                        <option>
+                                            Bikes
+                                        </option>
+                                        <option>
+                                            SUVs
+                                        </option>
+                                    </select>
+                                </div>
+                                <div class="field">
+                                    <label for="edit-hour-city">
+                                        Rental Rate / hour (₹) *
+                                    </label>
+                                    <input id="edit-hour-city" type="number" required min="1" value="200">
+                                </div>
+                                <div class="field">
+                                    <label for="edit-day-city">
+                                        Rental Rate / day (₹) *
+                                    </label>
+                                    <input id="edit-day-city" type="number" required min="1" value="2400">
+                                </div>
+                                <div class="field">
+                                    <label for="edit-status-city">
+                                        Status *
+                                    </label>
+                                    <select id="edit-status-city" required>
+                                        <option>
+                                            Available
+                                        </option>
+                                        <option selected>
+                                            Booked
+                                        </option>
+                                        <option>
+                                            Under Maintenance
+                                        </option>
+                                    </select>
+                                </div>
+                                <div class="field">
+                                    <label for="edit-image-city">
+                                        Replacement image (local only)
+                                    </label>
+                                    <input id="edit-image-city" type="file" accept="image/*">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label for="spec-city">
+                                    Specifications *
+                                </label>
+                                <textarea id="spec-city" rows="2" required>
+                                    Manual, Petrol, 5 seats
+                                </textarea>
+                            </div>
+                            <button class="button" type="submit">
+                                Save Changes (demo)
+                            </button>
+                        </form>
+                    </details>
+                    <details class="edit-panel" id="edit-nexon">
+                        <summary>
+                            Edit Tata Nexon
+                        </summary>
+                        <form action="fleet-management.html#fleet-notice" method="get">
+                            <div class="form-grid">
+                                <div class="field">
+                                    <label for="edit-name-nexon">
+                                        Vehicle Name *
+                                    </label>
+                                    <input id="edit-name-nexon" type="text" required value="Tata Nexon">
+                                </div>
+                                <div class="field">
+                                    <label for="edit-cat-nexon">
+                                        Category *
+                                    </label>
+                                    <select id="edit-cat-nexon" required>
+                                        <option>
+                                            Cars
+                                        </option>
+                                        <option>
+                                            Bikes
+                                        </option>
+                                        <option selected>
+                                            SUVs
+                                        </option>
+                                    </select>
+                                </div>
+                                <div class="field">
+                                    <label for="edit-hour-nexon">
+                                        Rental Rate / hour (₹) *
+                                    </label>
+                                    <input id="edit-hour-nexon" type="number" required min="1" value="220">
+                                </div>
+                                <div class="field">
+                                    <label for="edit-day-nexon">
+                                        Rental Rate / day (₹) *
+                                    </label>
+                                    <input id="edit-day-nexon" type="number" required min="1" value="2600">
+                                </div>
+                                <div class="field">
+                                    <label for="edit-status-nexon">
+                                        Status *
+                                    </label>
+                                    <select id="edit-status-nexon" required>
+                                        <option>
+                                            Available
+                                        </option>
+                                        <option>
+                                            Booked
+                                        </option>
+                                        <option selected>
+                                            Under Maintenance
+                                        </option>
+                                    </select>
+                                </div>
+                                <div class="field">
+                                    <label for="edit-image-nexon">
+                                        Replacement image (local only)
+                                    </label>
+                                    <input id="edit-image-nexon" type="file" accept="image/*">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label for="spec-nexon">
+                                    Specifications *
+                                </label>
+                                <textarea id="spec-nexon" rows="2" required>
+                                    Manual, Petrol, 5 seats
+                                </textarea>
+                            </div>
+                            <button class="button" type="submit">
+                                Save Changes (demo)
+                            </button>
+                        </form>
+                    </details>
+                    <details class="edit-panel" id="edit-r15">
+                        <summary>
+                            Edit Yamaha R15
+                        </summary>
+                        <form action="fleet-management.html#fleet-notice" method="get">
+                            <div class="form-grid">
+                                <div class="field">
+                                    <label for="edit-name-r15">
+                                        Vehicle Name *
+                                    </label>
+                                    <input id="edit-name-r15" type="text" required value="Yamaha R15">
+                                </div>
+                                <div class="field">
+                                    <label for="edit-cat-r15">
+                                        Category *
+                                    </label>
+                                    <select id="edit-cat-r15" required>
+                                        <option>
+                                            Cars
+                                        </option>
+                                        <option selected>
+                                            Bikes
+                                        </option>
+                                        <option>
+                                            SUVs
+                                        </option>
+                                    </select>
+                                </div>
+                                <div class="field">
+                                    <label for="edit-hour-r15">
+                                        Rental Rate / hour (₹) *
+                                    </label>
+                                    <input id="edit-hour-r15" type="number" required min="1" value="100">
+                                </div>
+                                <div class="field">
+                                    <label for="edit-day-r15">
+                                        Rental Rate / day (₹) *
+                                    </label>
+                                    <input id="edit-day-r15" type="number" required min="1" value="1100">
+                                </div>
+                                <div class="field">
+                                    <label for="edit-status-r15">
+                                        Status *
+                                    </label>
+                                    <select id="edit-status-r15" required>
+                                        <option>
+                                            Available
+                                        </option>
+                                        <option selected>
+                                            Booked
+                                        </option>
+                                        <option>
+                                            Under Maintenance
+                                        </option>
+                                    </select>
+                                </div>
+                                <div class="field">
+                                    <label for="edit-image-r15">
+                                        Replacement image (local only)
+                                    </label>
+                                    <input id="edit-image-r15" type="file" accept="image/*">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label for="spec-r15">
+                                    Specifications *
+                                </label>
+                                <textarea id="spec-r15" rows="2" required>
+                                    Manual, Petrol, 2 seats
+                                </textarea>
+                            </div>
+                            <button class="button" type="submit">
+                                Save Changes (demo)
+                            </button>
+                        </form>
+                    </details>
+                    <details class="edit-panel" id="edit-activa">
+                        <summary>
+                            Edit Honda Activa
+                        </summary>
+                        <form action="fleet-management.html#fleet-notice" method="get">
+                            <div class="form-grid">
+                                <div class="field">
+                                    <label for="edit-name-activa">
+                                        Vehicle Name *
+                                    </label>
+                                    <input id="edit-name-activa" type="text" required value="Honda Activa">
+                                </div>
+                                <div class="field">
+                                    <label for="edit-cat-activa">
+                                        Category *
+                                    </label>
+                                    <select id="edit-cat-activa" required>
+                                        <option>
+                                            Cars
+                                        </option>
+                                        <option selected>
+                                            Bikes
+                                        </option>
+                                        <option>
+                                            SUVs
+                                        </option>
+                                    </select>
+                                </div>
+                                <div class="field">
+                                    <label for="edit-hour-activa">
+                                        Rental Rate / hour (₹) *
+                                    </label>
+                                    <input id="edit-hour-activa" type="number" required min="1" value="50">
+                                </div>
+                                <div class="field">
+                                    <label for="edit-day-activa">
+                                        Rental Rate / day (₹) *
+                                    </label>
+                                    <input id="edit-day-activa" type="number" required min="1" value="500">
+                                </div>
+                                <div class="field">
+                                    <label for="edit-status-activa">
+                                        Status *
+                                    </label>
+                                    <select id="edit-status-activa" required>
+                                        <option selected>
+                                            Available
+                                        </option>
+                                        <option>
+                                            Booked
+                                        </option>
+                                        <option>
+                                            Under Maintenance
+                                        </option>
+                                    </select>
+                                </div>
+                                <div class="field">
+                                    <label for="edit-image-activa">
+                                        Replacement image (local only)
+                                    </label>
+                                    <input id="edit-image-activa" type="file" accept="image/*">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label for="spec-activa">
+                                    Specifications *
+                                </label>
+                                <textarea id="spec-activa" rows="2" required>
+                                    Automatic, Petrol, 2 seats
+                                </textarea>
+                            </div>
+                            <button class="button" type="submit">
+                                Save Changes (demo)
+                            </button>
+                        </form>
+                    </details>
+                    <details class="edit-panel" id="edit-ertiga">
+                        <summary>
+                            Edit Maruti Suzuki Ertiga
+                        </summary>
+                        <form action="fleet-management.html#fleet-notice" method="get">
+                            <div class="form-grid">
+                                <div class="field">
+                                    <label for="edit-name-ertiga">
+                                        Vehicle Name *
+                                    </label>
+                                    <input id="edit-name-ertiga" type="text" required value="Maruti Suzuki Ertiga">
+                                </div>
+                                <div class="field">
+                                    <label for="edit-cat-ertiga">
+                                        Category *
+                                    </label>
+                                    <select id="edit-cat-ertiga" required>
+                                        <option selected>
+                                            Cars
+                                        </option>
+                                        <option>
+                                            Bikes
+                                        </option>
+                                        <option>
+                                            SUVs
+                                        </option>
+                                    </select>
+                                </div>
+                                <div class="field">
+                                    <label for="edit-hour-ertiga">
+                                        Rental Rate / hour (₹) *
+                                    </label>
+                                    <input id="edit-hour-ertiga" type="number" required min="1" value="230">
+                                </div>
+                                <div class="field">
+                                    <label for="edit-day-ertiga">
+                                        Rental Rate / day (₹) *
+                                    </label>
+                                    <input id="edit-day-ertiga" type="number" required min="1" value="2800">
+                                </div>
+                                <div class="field">
+                                    <label for="edit-status-ertiga">
+                                        Status *
+                                    </label>
+                                    <select id="edit-status-ertiga" required>
+                                        <option selected>
+                                            Available
+                                        </option>
+                                        <option>
+                                            Booked
+                                        </option>
+                                        <option>
+                                            Under Maintenance
+                                        </option>
+                                    </select>
+                                </div>
+                                <div class="field">
+                                    <label for="edit-image-ertiga">
+                                        Replacement image (local only)
+                                    </label>
+                                    <input id="edit-image-ertiga" type="file" accept="image/*">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label for="spec-ertiga">
+                                    Specifications *
+                                </label>
+                                <textarea id="spec-ertiga" rows="2" required>
+                                    Manual, Petrol, 7 seats
+                                </textarea>
+                            </div>
+                            <button class="button" type="submit">
+                                Save Changes (demo)
+                            </button>
+                        </form>
+                    </details>
+                    <details class="edit-panel" id="edit-hunter">
+                        <summary>
+                            Edit Royal Enfield Hunter 350
+                        </summary>
+                        <form action="fleet-management.html#fleet-notice" method="get">
+                            <div class="form-grid">
+                                <div class="field">
+                                    <label for="edit-name-hunter">
+                                        Vehicle Name *
+                                    </label>
+                                    <input id="edit-name-hunter" type="text" required value="Royal Enfield Hunter 350">
+                                </div>
+                                <div class="field">
+                                    <label for="edit-cat-hunter">
+                                        Category *
+                                    </label>
+                                    <select id="edit-cat-hunter" required>
+                                        <option>
+                                            Cars
+                                        </option>
+                                        <option selected>
+                                            Bikes
+                                        </option>
+                                        <option>
+                                            SUVs
+                                        </option>
+                                    </select>
+                                </div>
+                                <div class="field">
+                                    <label for="edit-hour-hunter">
+                                        Rental Rate / hour (₹) *
+                                    </label>
+                                    <input id="edit-hour-hunter" type="number" required min="1" value="80">
+                                </div>
+                                <div class="field">
+                                    <label for="edit-day-hunter">
+                                        Rental Rate / day (₹) *
+                                    </label>
+                                    <input id="edit-day-hunter" type="number" required min="1" value="900">
+                                </div>
+                                <div class="field">
+                                    <label for="edit-status-hunter">
+                                        Status *
+                                    </label>
+                                    <select id="edit-status-hunter" required>
+                                        <option selected>
+                                            Available
+                                        </option>
+                                        <option>
+                                            Booked
+                                        </option>
+                                        <option>
+                                            Under Maintenance
+                                        </option>
+                                    </select>
+                                </div>
+                                <div class="field">
+                                    <label for="edit-image-hunter">
+                                        Replacement image (local only)
+                                    </label>
+                                    <input id="edit-image-hunter" type="file" accept="image/*">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label for="spec-hunter">
+                                    Specifications *
+                                </label>
+                                <textarea id="spec-hunter" rows="2" required>
+                                    Manual, Petrol, 2 seats
+                                </textarea>
+                            </div>
+                            <button class="button" type="submit">
+                                Save Changes (demo)
+                            </button>
+                        </form>
+                    </details>
+                    <details class="edit-panel" id="edit-fortuner">
+                        <summary>
+                            Edit Toyota Fortuner Legender
+                        </summary>
+                        <form action="fleet-management.html#fleet-notice" method="get">
+                            <div class="form-grid">
+                                <div class="field">
+                                    <label for="edit-name-fortuner">
+                                        Vehicle Name *
+                                    </label>
+                                    <input id="edit-name-fortuner" type="text" required value="Toyota Fortuner Legender">
+                                </div>
+                                <div class="field">
+                                    <label for="edit-cat-fortuner">
+                                        Category *
+                                    </label>
+                                    <select id="edit-cat-fortuner" required>
+                                        <option>
+                                            Cars
+                                        </option>
+                                        <option>
+                                            Bikes
+                                        </option>
+                                        <option selected>
+                                            SUVs
+                                        </option>
+                                    </select>
+                                </div>
+                                <div class="field">
+                                    <label for="edit-hour-fortuner">
+                                        Rental Rate / hour (₹) *
+                                    </label>
+                                    <input id="edit-hour-fortuner" type="number" required min="1" value="500">
+                                </div>
+                                <div class="field">
+                                    <label for="edit-day-fortuner">
+                                        Rental Rate / day (₹) *
+                                    </label>
+                                    <input id="edit-day-fortuner" type="number" required min="1" value="6000">
+                                </div>
+                                <div class="field">
+                                    <label for="edit-status-fortuner">
+                                        Status *
+                                    </label>
+                                    <select id="edit-status-fortuner" required>
+                                        <option selected>
+                                            Available
+                                        </option>
+                                        <option>
+                                            Booked
+                                        </option>
+                                        <option>
+                                            Under Maintenance
+                                        </option>
+                                    </select>
+                                </div>
+                                <div class="field">
+                                    <label for="edit-image-fortuner">
+                                        Replacement image (local only)
+                                    </label>
+                                    <input id="edit-image-fortuner" type="file" accept="image/*">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label for="spec-fortuner">
+                                    Specifications *
+                                </label>
+                                <textarea id="spec-fortuner" rows="2" required>
+                                    Automatic, Diesel, 7 seats
+                                </textarea>
+                            </div>
+                            <button class="button" type="submit">
+                                Save Changes (demo)
+                            </button>
+                        </form>
+                    </details>
+                    <details class="edit-panel" id="edit-thar">
+                        <summary>
+                            Edit Mahindra Thar
+                        </summary>
+                        <form action="fleet-management.html#fleet-notice" method="get">
+                            <div class="form-grid">
+                                <div class="field">
+                                    <label for="edit-name-thar">
+                                        Vehicle Name *
+                                    </label>
+                                    <input id="edit-name-thar" type="text" required value="Mahindra Thar">
+                                </div>
+                                <div class="field">
+                                    <label for="edit-cat-thar">
+                                        Category *
+                                    </label>
+                                    <select id="edit-cat-thar" required>
+                                        <option>
+                                            Cars
+                                        </option>
+                                        <option>
+                                            Bikes
+                                        </option>
+                                        <option selected>
+                                            SUVs
+                                        </option>
+                                    </select>
+                                </div>
+                                <div class="field">
+                                    <label for="edit-hour-thar">
+                                        Rental Rate / hour (₹) *
+                                    </label>
+                                    <input id="edit-hour-thar" type="number" required min="1" value="400">
+                                </div>
+                                <div class="field">
+                                    <label for="edit-day-thar">
+                                        Rental Rate / day (₹) *
+                                    </label>
+                                    <input id="edit-day-thar" type="number" required min="1" value="4800">
+                                </div>
+                                <div class="field">
+                                    <label for="edit-status-thar">
+                                        Status *
+                                    </label>
+                                    <select id="edit-status-thar" required>
+                                        <option selected>
+                                            Available
+                                        </option>
+                                        <option>
+                                            Booked
+                                        </option>
+                                        <option>
+                                            Under Maintenance
+                                        </option>
+                                    </select>
+                                </div>
+                                <div class="field">
+                                    <label for="edit-image-thar">
+                                        Replacement image (local only)
+                                    </label>
+                                    <input id="edit-image-thar" type="file" accept="image/*">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label for="spec-thar">
+                                    Specifications *
+                                </label>
+                                <textarea id="spec-thar" rows="2" required>
+                                    Manual, Diesel, 5 seats
+                                </textarea>
+                            </div>
+                            <button class="button" type="submit">
+                                Save Changes (demo)
+                            </button>
+                        </form>
+                    </details>
+                    <details class="edit-panel" id="edit-omni">
+                        <summary>
+                            Edit Maruti Suzuki Omni
+                        </summary>
+                        <form action="fleet-management.html#fleet-notice" method="get">
+                            <div class="form-grid">
+                                <div class="field">
+                                    <label for="edit-name-omni">
+                                        Vehicle Name *
+                                    </label>
+                                    <input id="edit-name-omni" type="text" required value="Maruti Suzuki Omni">
+                                </div>
+                                <div class="field">
+                                    <label for="edit-cat-omni">
+                                        Category *
+                                    </label>
+                                    <select id="edit-cat-omni" required>
+                                        <option selected>
+                                            Cars
+                                        </option>
+                                        <option>
+                                            Bikes
+                                        </option>
+                                        <option>
+                                            SUVs
+                                        </option>
+                                    </select>
+                                </div>
+                                <div class="field">
+                                    <label for="edit-hour-omni">
+                                        Rental Rate / hour (₹) *
+                                    </label>
+                                    <input id="edit-hour-omni" type="number" required min="1" value="100">
+                                </div>
+                                <div class="field">
+                                    <label for="edit-day-omni">
+                                        Rental Rate / day (₹) *
+                                    </label>
+                                    <input id="edit-day-omni" type="number" required min="1" value="1200">
+                                </div>
+                                <div class="field">
+                                    <label for="edit-status-omni">
+                                        Status *
+                                    </label>
+                                    <select id="edit-status-omni" required>
+                                        <option selected>
+                                            Available
+                                        </option>
+                                        <option>
+                                            Booked
+                                        </option>
+                                        <option>
+                                            Under Maintenance
+                                        </option>
+                                    </select>
+                                </div>
+                                <div class="field">
+                                    <label for="edit-image-omni">
+                                        Replacement image (local only)
+                                    </label>
+                                    <input id="edit-image-omni" type="file" accept="image/*">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label for="spec-omni">
+                                    Specifications *
+                                </label>
+                                <textarea id="spec-omni" rows="2" required>
+                                    Manual, Petrol, 5 seats
+                                </textarea>
+                            </div>
+                            <button class="button" type="submit">
+                                Save Changes (demo)
+                            </button>
+                        </form>
+                    </details>
+                    <details class="edit-panel" id="edit-scorpio">
+                        <summary>
+                            Edit Mahindra Scorpio N
+                        </summary>
+                        <form action="fleet-management.html#fleet-notice" method="get">
+                            <div class="form-grid">
+                                <div class="field">
+                                    <label for="edit-name-scorpio">
+                                        Vehicle Name *
+                                    </label>
+                                    <input id="edit-name-scorpio" type="text" required value="Mahindra Scorpio N">
+                                </div>
+                                <div class="field">
+                                    <label for="edit-cat-scorpio">
+                                        Category *
+                                    </label>
+                                    <select id="edit-cat-scorpio" required>
+                                        <option>
+                                            Cars
+                                        </option>
+                                        <option>
+                                            Bikes
+                                        </option>
+                                        <option selected>
+                                            SUVs
+                                        </option>
+                                    </select>
+                                </div>
+                                <div class="field">
+                                    <label for="edit-hour-scorpio">
+                                        Rental Rate / hour (₹) *
+                                    </label>
+                                    <input id="edit-hour-scorpio" type="number" required min="1" value="350">
+                                </div>
+                                <div class="field">
+                                    <label for="edit-day-scorpio">
+                                        Rental Rate / day (₹) *
+                                    </label>
+                                    <input id="edit-day-scorpio" type="number" required min="1" value="4200">
+                                </div>
+                                <div class="field">
+                                    <label for="edit-status-scorpio">
+                                        Status *
+                                    </label>
+                                    <select id="edit-status-scorpio" required>
+                                        <option selected>
+                                            Available
+                                        </option>
+                                        <option>
+                                            Booked
+                                        </option>
+                                        <option>
+                                            Under Maintenance
+                                        </option>
+                                    </select>
+                                </div>
+                                <div class="field">
+                                    <label for="edit-image-scorpio">
+                                        Replacement image (local only)
+                                    </label>
+                                    <input id="edit-image-scorpio" type="file" accept="image/*">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label for="spec-scorpio">
+                                    Specifications *
+                                </label>
+                                <textarea id="spec-scorpio" rows="2" required>
+                                    Manual, Diesel, 7 seats
+                                </textarea>
+                            </div>
+                            <button class="button" type="submit">
+                                Save Changes (demo)
+                            </button>
+                        </form>
+                    </details>
+                    <details class="edit-panel" id="edit-splendor">
+                        <summary>
+                            Edit Hero Splendor
+                        </summary>
+                        <form action="fleet-management.html#fleet-notice" method="get">
+                            <div class="form-grid">
+                                <div class="field">
+                                    <label for="edit-name-splendor">
+                                        Vehicle Name *
+                                    </label>
+                                    <input id="edit-name-splendor" type="text" required value="Hero Splendor">
+                                </div>
+                                <div class="field">
+                                    <label for="edit-cat-splendor">
+                                        Category *
+                                    </label>
+                                    <select id="edit-cat-splendor" required>
+                                        <option>
+                                            Cars
+                                        </option>
+                                        <option selected>
+                                            Bikes
+                                        </option>
+                                        <option>
+                                            SUVs
+                                        </option>
+                                    </select>
+                                </div>
+                                <div class="field">
+                                    <label for="edit-hour-splendor">
+                                        Rental Rate / hour (₹) *
+                                    </label>
+                                    <input id="edit-hour-splendor" type="number" required min="1" value="40">
+                                </div>
+                                <div class="field">
+                                    <label for="edit-day-splendor">
+                                        Rental Rate / day (₹) *
+                                    </label>
+                                    <input id="edit-day-splendor" type="number" required min="1" value="400">
+                                </div>
+                                <div class="field">
+                                    <label for="edit-status-splendor">
+                                        Status *
+                                    </label>
+                                    <select id="edit-status-splendor" required>
+                                        <option selected>
+                                            Available
+                                        </option>
+                                        <option>
+                                            Booked
+                                        </option>
+                                        <option>
+                                            Under Maintenance
+                                        </option>
+                                    </select>
+                                </div>
+                                <div class="field">
+                                    <label for="edit-image-splendor">
+                                        Replacement image (local only)
+                                    </label>
+                                    <input id="edit-image-splendor" type="file" accept="image/*">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label for="spec-splendor">
+                                    Specifications *
+                                </label>
+                                <textarea id="spec-splendor" rows="2" required>
+                                    Manual, Petrol, 2 seats
+                                </textarea>
+                            </div>
+                            <button class="button" type="submit">
+                                Save Changes (demo)
+                            </button>
+                        </form>
+                    </details>
+                    <details class="edit-panel" id="edit-safari">
+                        <summary>
+                            Edit Tata Safari Storme
+                        </summary>
+                        <form action="fleet-management.html#fleet-notice" method="get">
+                            <div class="form-grid">
+                                <div class="field">
+                                    <label for="edit-name-safari">
+                                        Vehicle Name *
+                                    </label>
+                                    <input id="edit-name-safari" type="text" required value="Tata Safari Storme">
+                                </div>
+                                <div class="field">
+                                    <label for="edit-cat-safari">
+                                        Category *
+                                    </label>
+                                    <select id="edit-cat-safari" required>
+                                        <option>
+                                            Cars
+                                        </option>
+                                        <option>
+                                            Bikes
+                                        </option>
+                                        <option selected>
+                                            SUVs
+                                        </option>
+                                    </select>
+                                </div>
+                                <div class="field">
+                                    <label for="edit-hour-safari">
+                                        Rental Rate / hour (₹) *
+                                    </label>
+                                    <input id="edit-hour-safari" type="number" required min="1" value="300">
+                                </div>
+                                <div class="field">
+                                    <label for="edit-day-safari">
+                                        Rental Rate / day (₹) *
+                                    </label>
+                                    <input id="edit-day-safari" type="number" required min="1" value="3600">
+                                </div>
+                                <div class="field">
+                                    <label for="edit-status-safari">
+                                        Status *
+                                    </label>
+                                    <select id="edit-status-safari" required>
+                                        <option selected>
+                                            Available
+                                        </option>
+                                        <option>
+                                            Booked
+                                        </option>
+                                        <option>
+                                            Under Maintenance
+                                        </option>
+                                    </select>
+                                </div>
+                                <div class="field">
+                                    <label for="edit-image-safari">
+                                        Replacement image (local only)
+                                    </label>
+                                    <input id="edit-image-safari" type="file" accept="image/*">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label for="spec-safari">
+                                    Specifications *
+                                </label>
+                                <textarea id="spec-safari" rows="2" required>
+                                    Manual, Diesel, 7 seats
+                                </textarea>
+                            </div>
+                            <button class="button" type="submit">
+                                Save Changes (demo)
+                            </button>
+                        </form>
+                    </details>
+                    <details class="edit-panel" id="edit-raider">
+                        <summary>
+                            Edit TVS Raider 125
+                        </summary>
+                        <form action="fleet-management.html#fleet-notice" method="get">
+                            <div class="form-grid">
+                                <div class="field">
+                                    <label for="edit-name-raider">
+                                        Vehicle Name *
+                                    </label>
+                                    <input id="edit-name-raider" type="text" required value="TVS Raider 125">
+                                </div>
+                                <div class="field">
+                                    <label for="edit-cat-raider">
+                                        Category *
+                                    </label>
+                                    <select id="edit-cat-raider" required>
+                                        <option>
+                                            Cars
+                                        </option>
+                                        <option selected>
+                                            Bikes
+                                        </option>
+                                        <option>
+                                            SUVs
+                                        </option>
+                                    </select>
+                                </div>
+                                <div class="field">
+                                    <label for="edit-hour-raider">
+                                        Rental Rate / hour (₹) *
+                                    </label>
+                                    <input id="edit-hour-raider" type="number" required min="1" value="60">
+                                </div>
+                                <div class="field">
+                                    <label for="edit-day-raider">
+                                        Rental Rate / day (₹) *
+                                    </label>
+                                    <input id="edit-day-raider" type="number" required min="1" value="650">
+                                </div>
+                                <div class="field">
+                                    <label for="edit-status-raider">
+                                        Status *
+                                    </label>
+                                    <select id="edit-status-raider" required>
+                                        <option selected>
+                                            Available
+                                        </option>
+                                        <option>
+                                            Booked
+                                        </option>
+                                        <option>
+                                            Under Maintenance
+                                        </option>
+                                    </select>
+                                </div>
+                                <div class="field">
+                                    <label for="edit-image-raider">
+                                        Replacement image (local only)
+                                    </label>
+                                    <input id="edit-image-raider" type="file" accept="image/*">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label for="spec-raider">
+                                    Specifications *
+                                </label>
+                                <textarea id="spec-raider" rows="2" required>
+                                    Manual, Petrol, 2 seats
+                                </textarea>
+                            </div>
+                            <button class="button" type="submit">
+                                Save Changes (demo)
+                            </button>
+                        </form>
+                    </details>
+                    <details class="edit-panel" id="edit-xuv700">
+                        <summary>
+                            Edit Mahindra XUV700
+                        </summary>
+                        <form action="fleet-management.html#fleet-notice" method="get">
+                            <div class="form-grid">
+                                <div class="field">
+                                    <label for="edit-name-xuv700">
+                                        Vehicle Name *
+                                    </label>
+                                    <input id="edit-name-xuv700" type="text" required value="Mahindra XUV700">
+                                </div>
+                                <div class="field">
+                                    <label for="edit-cat-xuv700">
+                                        Category *
+                                    </label>
+                                    <select id="edit-cat-xuv700" required>
+                                        <option>
+                                            Cars
+                                        </option>
+                                        <option>
+                                            Bikes
+                                        </option>
+                                        <option selected>
+                                            SUVs
+                                        </option>
+                                    </select>
+                                </div>
+                                <div class="field">
+                                    <label for="edit-hour-xuv700">
+                                        Rental Rate / hour (₹) *
+                                    </label>
+                                    <input id="edit-hour-xuv700" type="number" required min="1" value="380">
+                                </div>
+                                <div class="field">
+                                    <label for="edit-day-xuv700">
+                                        Rental Rate / day (₹) *
+                                    </label>
+                                    <input id="edit-day-xuv700" type="number" required min="1" value="4500">
+                                </div>
+                                <div class="field">
+                                    <label for="edit-status-xuv700">
+                                        Status *
+                                    </label>
+                                    <select id="edit-status-xuv700" required>
+                                        <option selected>
+                                            Available
+                                        </option>
+                                        <option>
+                                            Booked
+                                        </option>
+                                        <option>
+                                            Under Maintenance
+                                        </option>
+                                    </select>
+                                </div>
+                                <div class="field">
+                                    <label for="edit-image-xuv700">
+                                        Replacement image (local only)
+                                    </label>
+                                    <input id="edit-image-xuv700" type="file" accept="image/*">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label for="spec-xuv700">
+                                    Specifications *
+                                </label>
+                                <textarea id="spec-xuv700" rows="2" required>
+                                    Automatic, Diesel, 7 seats
+                                </textarea>
+                            </div>
+                            <button class="button" type="submit">
+                                Save Changes (demo)
+                            </button>
+                        </form>
+                    </details>
+                </section>
+                <p class="notice" id="fleet-notice">
+                    Static demonstration only. No record has been added, edited or removed. Image selections are not uploaded.
+                </p>
+            </div>
+        </main>
+        <footer>
+            <div class="container footer-grid">
+                <div>
+                    <strong>
+                        Vehicle Rental and Fleet Management System
+                    </strong>
+                    <p>
+                        GLA University, Mathura · B.Tech CSE mini project
+                    </p>
+                </div>
+                <nav aria-label="Footer navigation">
+                    <a href="index.html">
+                        Home
+                    </a>
+                    <a href="vehicles.html">
+                        Vehicles
+                    </a>
+                    <a href="booking.html">
+                        Booking
+                    </a>
+                    <a href="admin-dashboard.html">
+                        Admin Dashboard
+                    </a>
+                </nav>
+            </div>
+            <div class="container footer-note">
+                Academic demonstration · Sample rates and availability · No real reservations
+            </div>
+        </footer>
+    </body>
+</html>
