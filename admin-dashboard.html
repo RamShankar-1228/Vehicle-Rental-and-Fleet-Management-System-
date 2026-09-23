@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Vehicle Rental and Fleet Management System. An HTML and CSS college mini project.">
+        <title>
+            Admin Dashboard | Vehicle Rental and Fleet Management System
+        </title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" href="images/rental-logo.svg" type="image/svg+xml">
+    </head>
+    <body>
+        <a class="skip-link" href="#main">
+            Skip to content
+        </a>
+        <header class="site-header">
+            <div class="container header-inner">
+                <a class="brand" href="index.html">
+                    <img class="brand-logo" src="images/rental-logo.svg" alt="" width="48" height="48">
+                    <span>
+                        Vehicle Rental
+                        <span class="brand-sub">
+                            &amp;
+                            Fleet Management System
+                        </span>
+                    </span>
+                </a>
+                <nav aria-label="Main navigation">
+<a href="index.html">Home</a>
+<a href="vehicles.html">Vehicles</a>
+<a href="booking.html">Booking</a>
+<a href="pre-booking.html">Pre-booking</a>
+<a href="login.html">Login</a>
+<a href="admin-login.html">Admin Login</a>
+</nav>
+            </div>
+        </header>
+        <main id="main">
+<div class="container">
+<p class="notice">Static admin demonstration. Direct URLs are public; HTML/CSS cannot authenticate users. <a href="admin-login.html">Admin Login</a>
+</p>
+</div>
+            <div class="container section">
+                <nav class="admin-nav" aria-label="Admin navigation">
+                    <a href="admin-dashboard.html" aria-current="page">
+                        Dashboard
+                    </a>
+                    <a href="fleet-management.html">
+                        Fleet Management
+                    </a>
+                    <a href="admin-dashboard.html#bookings">
+                        Bookings
+                    </a>
+                    <a href="admin-dashboard.html#availability">
+                        Availability
+                    </a>
+                </nav>
+                <div class="page-heading">
+                    <p class="eyebrow">
+                        ADMIN WORKSPACE
+                    </p>
+                    <h1>
+                        Fleet overview
+                    </h1>
+                    <p>
+                        A central view of sample vehicles, bookings and availability.
+                    </p>
+                </div>
+                <p class="notice">
+                    Static admin demonstration. All records are sample data; there is no authentication, live tracking or record storage.
+                </p>
+                <section class="summary-grid" aria-label="Fleet summary">
+                    <article class="summary-card ">
+                        <p>
+                            Total Vehicles
+                        </p>
+                        <strong>
+                            17
+                        </strong>
+                        <span>
+                            Sample fleet
+                        </span>
+                    </article>
+                    <article class="summary-card green">
+                        <p>
+                            Available
+                        </p>
+                        <strong>
+                            14
+                        </strong>
+                        <span>
+                            Sample fleet
+                        </span>
+                    </article>
+                    <article class="summary-card amber">
+                        <p>
+                            Booked
+                        </p>
+                        <strong>
+                            02
+                        </strong>
+                        <span>
+                            Sample fleet
+                        </span>
+                    </article>
+                    <article class="summary-card red">
+                        <p>
+                            Under Maintenance
+                        </p>
+                        <strong>
+                            01
+                        </strong>
+                        <span>
+                            Sample fleet
+                        </span>
+                    </article>
+                </section>
+                <section id="bookings" class="panel">
+                    <div class="section-heading">
+                        <div>
+                            <p class="eyebrow">
+                                RENTAL RECORDS
+                            </p>
+                            <h2>
+                                Recent bookings
+                            </h2>
+                        </div>
+                        <span class="demo-chip">
+                            SAMPLE DATA
+                        </span>
+                    </div>
+                    <div class="table-wrap" role="region" aria-label="Recent bookings" tabindex="0">
+                        <table>
+                            <caption>
+                                Two illustrative bookings
+                            </caption>
+                            <thead>
+                                <tr>
+                                    <th scope="col">
+                                        Customer
+                                    </th>
+                                    <th scope="col">
+                                        Vehicle
+                                    </th>
+                                    <th scope="col">
+                                        Pickup Date
+                                    </th>
+                                    <th scope="col">
+                                        Return Date
+                                    </th>
+                                    <th scope="col">
+                                        Status
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">
+                                        Aarav Mehta
+                                    </th>
+                                    <td>
+                                        Honda City
+                                    </td>
+                                    <td>
+                                        20 Sep 2026, 09:00
+                                    </td>
+                                    <td>
+                                        22 Sep 2026, 09:00
+                                    </td>
+                                    <td>
+                                        <span class="badge booked">
+                                            Booked
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        Neha Verma
+                                    </th>
+                                    <td>
+                                        Yamaha R15
+                                    </td>
+                                    <td>
+                                        20 Sep 2026, 10:00
+                                    </td>
+                                    <td>
+                                        21 Sep 2026, 10:00
+                                    </td>
+                                    <td>
+                                        <span class="badge booked">
+                                            Booked
+                                        </span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+                <section class="section" id="availability">
+                    <div class="section-heading">
+                        <div>
+                            <p class="eyebrow">
+                                AVAILABILITY TRACKING
+                            </p>
+                            <h2>
+                                Fleet overview
+                            </h2>
+                        </div>
+                        <a class="button secondary" href="fleet-management.html">
+                            Manage fleet →
+                        </a>
+                    </div>
+                    <div class="table-wrap" role="region" aria-label="Vehicle availability table" tabindex="0">
+                        <table>
+                            <caption>
+                                Sample fleet records · 17 vehicles
+                            </caption>
+                            <thead>
+                                <tr>
+                                    <th scope="col">
+                                        Vehicle
+                                    </th>
+                                    <th scope="col">
+                                        Category
+                                    </th>
+                                    <th scope="col">
+                                        Rental Rate
+                                    </th>
+                                    <th scope="col">
+                                        Status
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">
+                                        <a href="vehicle-details.html#swift">
+                                            Maruti Suzuki Swift
+                                        </a>
+                                    </th>
+                                    <td>
+                                        Cars
+                                    </td>
+                                    <td>
+                                        ₹150 / hour
+                                        <br>
+                                        ₹1,800 / day
+                                    </td>
+                                    <td>
+                                        <span class="badge available">
+                                            Available
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <a href="vehicle-details.html#creta">
+                                            Hyundai Creta
+                                        </a>
+                                    </th>
+                                    <td>
+                                        SUVs
+                                    </td>
+                                    <td>
+                                        ₹250 / hour
+                                        <br>
+                                        ₹3,000 / day
+                                    </td>
+                                    <td>
+                                        <span class="badge available">
+                                            Available
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <a href="vehicle-details.html#classic">
+                                            Royal Enfield Classic 350
+                                        </a>
+                                    </th>
+                                    <td>
+                                        Bikes
+                                    </td>
+                                    <td>
+                                        ₹80 / hour
+                                        <br>
+                                        ₹900 / day
+                                    </td>
+                                    <td>
+                                        <span class="badge available">
+                                            Available
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <a href="vehicle-details.html#city">
+                                            Honda City
+                                        </a>
+                                    </th>
+                                    <td>
+                                        Cars
+                                    </td>
+                                    <td>
+                                        ₹200 / hour
+                                        <br>
+                                        ₹2,400 / day
+                                    </td>
+                                    <td>
+                                        <span class="badge booked">
+                                            Booked
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <a href="vehicle-details.html#nexon">
+                                            Tata Nexon
+                                        </a>
+                                    </th>
+                                    <td>
+                                        SUVs
+                                    </td>
+                                    <td>
+                                        ₹220 / hour
+                                        <br>
+                                        ₹2,600 / day
+                                    </td>
+                                    <td>
+                                        <span class="badge maintenance">
+                                            Under Maintenance
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <a href="vehicle-details.html#r15">
+                                            Yamaha R15
+                                        </a>
+                                    </th>
+                                    <td>
+                                        Bikes
+                                    </td>
+                                    <td>
+                                        ₹100 / hour
+                                        <br>
+                                        ₹1,100 / day
+                                    </td>
+                                    <td>
+                                        <span class="badge booked">
+                                            Booked
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <a href="vehicle-details.html#activa">
+                                            Honda Activa
+                                        </a>
+                                    </th>
+                                    <td>
+                                        Bikes
+                                    </td>
+                                    <td>
+                                        ₹50 / hour
+                                        <br>
+                                        ₹500 / day
+                                    </td>
+                                    <td>
+                                        <span class="badge available">
+                                            Available
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <a href="vehicle-details.html#ertiga">
+                                            Maruti Suzuki Ertiga
+                                        </a>
+                                    </th>
+                                    <td>
+                                        Cars
+                                    </td>
+                                    <td>
+                                        ₹230 / hour
+                                        <br>
+                                        ₹2,800 / day
+                                    </td>
+                                    <td>
+                                        <span class="badge available">
+                                            Available
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <a href="vehicle-details.html#hunter">
+                                            Royal Enfield Hunter 350
+                                        </a>
+                                    </th>
+                                    <td>
+                                        Bikes
+                                    </td>
+                                    <td>
+                                        ₹80 / hour
+                                        <br>
+                                        ₹900 / day
+                                    </td>
+                                    <td>
+                                        <span class="badge available">
+                                            Available
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <a href="vehicle-details.html#fortuner">
+                                            Toyota Fortuner Legender
+                                        </a>
+                                    </th>
+                                    <td>
+                                        SUVs
+                                    </td>
+                                    <td>
+                                        ₹500 / hour
+                                        <br>
+                                        ₹6,000 / day
+                                    </td>
+                                    <td>
+                                        <span class="badge available">
+                                            Available
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <a href="vehicle-details.html#thar">
+                                            Mahindra Thar
+                                        </a>
+                                    </th>
+                                    <td>
+                                        SUVs
+                                    </td>
+                                    <td>
+                                        ₹400 / hour
+                                        <br>
+                                        ₹4,800 / day
+                                    </td>
+                                    <td>
+                                        <span class="badge available">
+                                            Available
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <a href="vehicle-details.html#omni">
+                                            Maruti Suzuki Omni
+                                        </a>
+                                    </th>
+                                    <td>
+                                        Cars
+                                    </td>
+                                    <td>
+                                        ₹100 / hour
+                                        <br>
+                                        ₹1,200 / day
+                                    </td>
+                                    <td>
+                                        <span class="badge available">
+                                            Available
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <a href="vehicle-details.html#scorpio">
+                                            Mahindra Scorpio N
+                                        </a>
+                                    </th>
+                                    <td>
+                                        SUVs
+                                    </td>
+                                    <td>
+                                        ₹350 / hour
+                                        <br>
+                                        ₹4,200 / day
+                                    </td>
+                                    <td>
+                                        <span class="badge available">
+                                            Available
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <a href="vehicle-details.html#splendor">
+                                            Hero Splendor
+                                        </a>
+                                    </th>
+                                    <td>
+                                        Bikes
+                                    </td>
+                                    <td>
+                                        ₹40 / hour
+                                        <br>
+                                        ₹400 / day
+                                    </td>
+                                    <td>
+                                        <span class="badge available">
+                                            Available
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <a href="vehicle-details.html#safari">
+                                            Tata Safari Storme
+                                        </a>
+                                    </th>
+                                    <td>
+                                        SUVs
+                                    </td>
+                                    <td>
+                                        ₹300 / hour
+                                        <br>
+                                        ₹3,600 / day
+                                    </td>
+                                    <td>
+                                        <span class="badge available">
+                                            Available
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <a href="vehicle-details.html#raider">
+                                            TVS Raider 125
+                                        </a>
+                                    </th>
+                                    <td>
+                                        Bikes
+                                    </td>
+                                    <td>
+                                        ₹60 / hour
+                                        <br>
+                                        ₹650 / day
+                                    </td>
+                                    <td>
+                                        <span class="badge available">
+                                            Available
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <a href="vehicle-details.html#xuv700">
+                                            Mahindra XUV700
+                                        </a>
+                                    </th>
+                                    <td>
+                                        SUVs
+                                    </td>
+                                    <td>
+                                        ₹380 / hour
+                                        <br>
+                                        ₹4,500 / day
+                                    </td>
+                                    <td>
+                                        <span class="badge available">
+                                            Available
+                                        </span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <div class="container footer-grid">
+                <div>
+                    <strong>
+                        Vehicle Rental and Fleet Management System
+                    </strong>
+                    <p>
+                        GLA University, Mathura · B.Tech CSE mini project
+                    </p>
+                </div>
+                <nav aria-label="Footer navigation">
+                    <a href="index.html">
+                        Home
+                    </a>
+                    <a href="vehicles.html">
+                        Vehicles
+                    </a>
+                    <a href="booking.html">
+                        Booking
+                    </a>
+                    <a href="admin-dashboard.html">
+                        Admin Dashboard
+                    </a>
+                </nav>
+            </div>
+            <div class="container footer-note">
+                Academic demonstration · Sample rates and availability · No real reservations
+            </div>
+        </footer>
+    </body>
+</html>
